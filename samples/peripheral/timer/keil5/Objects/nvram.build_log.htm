@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: zephyr Microsoft, Microsoft, LIC=50DRA-1X8BP-65RTW-QNATW-75GI0-AETN2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  C:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMCM1.DLL V1.14.0.0
+Target DLL:      CMSIS_AGDI.dll V1.26.5.0
+Dialog DLL:      TARMCM1.DLL V1.10.0.0
+ 
+<h2>Project:</h2>
+D:\BLE\Cubie\adc_45_key\rel_TAG_ZS110A_1910_190401\samples\peripheral\timer\keil5\timer.uvprojx
+Project File Date:  04/17/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil\ARM\ARMCC\Bin'
+Build target 'flash'
+compiling main.c...
+..\..\..\..\include\misc/byteorder.h(296): warning:  #1254-D: arithmetic on pointer to void or function type
+  	src += length - 1;
+..\..\..\..\include\misc/byteorder.h(299): warning:  #1254-D: arithmetic on pointer to void or function type
+  		*((u8_t *)dst++) = *((u8_t *)src--);
+..\..\..\..\include\misc/byteorder.h(299): warning:  #1254-D: arithmetic on pointer to void or function type
+  		*((u8_t *)dst++) = *((u8_t *)src--);
+..\src\main.c: 3 warnings, 0 errors
+linking...
+.\link.sct(33): warning: L6314W: No section matches pattern *.o(.init_APPLICATION*).
+.\link.sct(43): warning: L6314W: No section matches pattern *.o(._net_buf_pool.static.*).
+.\link.sct(47): warning: L6314W: No section matches pattern *.o(._k_mem_pool.static.*).
+.\link.sct(51): warning: L6314W: No section matches pattern *.o(.shell_).
+.\link.sct(61): warning: L6314W: No section matches pattern *.o(.patch_hw_code).
+Program Size: Code=2816 RO-data=336 RW-data=3504 ZI-data=896  
+Finished: 0 information, 5 warning and 0 error messages.
+".\Objects\nvram.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\BLE\Cubie\adc_45_key\rel_TAG_ZS110A_1910_190401\samples\peripheral\timer\keil5\RTE
+  C:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

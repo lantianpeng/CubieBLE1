@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+".\objects\startup.o"
+".\objects\system.o"
+".\objects\entry.o"
+".\objects\soc_patch.o"
+".\objects\soc_pm.o"
+".\objects\main.o"
+".\objects\msg_manager.o"
+".\objects\board.o"
+".\objects\uart_console.o"
+".\objects\sys_clock_init.o"
+".\objects\uart_acts.o"
+".\objects\llc_hci.o"
+".\objects\llcc.o"
+".\objects\device.o"
+".\objects\kernel_config_init.o"
+".\objects\system_work_q.o"
+".\objects\bt_host_config_init.o"
+".\objects\bt_host_patch.o"
+".\objects\storage.o"
+--library_type=microlib --strict --scatter ".\link.sct"
+..\..\..\..\arch\soc\atb110x\rom_zephyr_symdefs.txt --datacompressor=off --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\central_datc.map" -o .\Objects\central_datc.axf

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<firmware>
+	<descirption>Firmware layout for ZS110A</descirption>
+	<disk_size>0x80000</disk_size>
+
+	<partitions>
+		<partition>
+			<type>SYSTEM</type>
+			<name>fw0_app</name>
+			<file>hello.bin</file>
+			<address>0x0</address>
+			<enable_crc>false</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_ota>true</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>true</enable_dfu>
+			<fw_id>0</fw_id>
+		</partition>
+	</partitions>
+</firmware>

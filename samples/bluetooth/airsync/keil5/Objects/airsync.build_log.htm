@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: le Microsoft, Microsoft, LIC=KIVNN-YN1ZZ-RF1IZ-JI36U-KYDSX-M1VUE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  F:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMCM1.DLL V1.18.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TARMCM1.DLL V1.13.0.0
+ 
+<h2>Project:</h2>
+I:\BLE\CubieBLE1\CubieBLE1-v2\samples\bluetooth\airsync\keil5\airsync.uvprojx
+Project File Date:  04/30/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'F:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'flash'
+assembling startup.s...
+compiling entry.c...
+compiling system.c...
+compiling soc_patch.c...
+compiling mem_manager.c...
+compiling soc_pm.c...
+compiling main.c...
+compiling board.c...
+compiling wechat_protocol.c...
+..\..\..\..\include\misc/byteorder.h(296): warning:  #1254-D: arithmetic on pointer to void or function type
+  	src += length - 1;
+..\..\..\..\include\misc/byteorder.h(299): warning:  #1254-D: arithmetic on pointer to void or function type
+  		*((u8_t *)dst++) = *((u8_t *)src--);
+..\..\..\..\include\misc/byteorder.h(299): warning:  #1254-D: arithmetic on pointer to void or function type
+  		*((u8_t *)dst++) = *((u8_t *)src--);
+..\src\wechat\MmBp_helper\wechat_protocol.c: 3 warnings, 0 errors
+compiling wechat_service.c...
+..\..\..\..\include\misc/byteorder.h(296): warning:  #1254-D: arithmetic on pointer to void or function type
+  	src += length - 1;
+..\..\..\..\include\misc/byteorder.h(299): warning:  #1254-D: arithmetic on pointer to void or function type
+  		*((u8_t *)dst++) = *((u8_t *)src--);
+..\..\..\..\include\misc/byteorder.h(299): warning:  #1254-D: arithmetic on pointer to void or function type
+  		*((u8_t *)dst++) = *((u8_t *)src--);
+..\src\wechat\service\wechat_service.c(265): warning:  #1254-D: arithmetic on pointer to void or function type
+  		g_ind_params.data = buf + sent;
+..\src\wechat\service\wechat_service.c(275): warning:  #1254-D: arithmetic on pointer to void or function type
+  		memcpy(tmp_buf, buf + sent, len);
+..\src\wechat\service\wechat_service.c: 5 warnings, 0 errors
+compiling uart_console.c...
+compiling sys_clock_init.c...
+compiling uart_acts.c...
+compiling llc_hci.c...
+compiling device.c...
+compiling llcc.c...
+compiling kernel_config_init.c...
+compiling system_work_q.c...
+compiling bt_host_config_init.c...
+compiling bt_host_patch.c...
+compiling crc32.c...
+compiling storage.c...
+compiling epb.c...
+compiling epb_MmBp.c...
+linking...
+.\link.sct(47): warning: L6314W: No section matches pattern *.o(._k_mem_pool.static.*).
+.\link.sct(51): warning: L6314W: No section matches pattern *.o(.shell_).
+Program Size: Code=13540 RO-data=928 RW-data=7872 ZI-data=4196  
+Finished: 0 information, 2 warning and 0 error messages.
+".\Objects\airsync.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM.CMSIS.4.2.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_flash
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

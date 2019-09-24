@@ -1,0 +1,7 @@
+#<SYMDEFS># ARM Linker, 5060061: Last Updated: Wed Apr 18 15:19:29 2018
+0x000002b5 T brom_spi0_read
+0x00000a67 T brom_spi1_read
+0x00001e45 T uart_connect
+0x000012dd T uart_adfu_server
+0x00000e19 T uart_adfu_close
+0x00002201 T uart_open

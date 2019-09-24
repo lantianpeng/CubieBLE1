@@ -1,0 +1,2024 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\airsync.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\airsync.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sun May 05 16:08:13 2019
+<BR><P>
+<H3>Maximum Stack Usage =        320 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+p_llc_init_trim_up_load_new &rArr; llc_init_tx_command
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[5]">_timer_int_handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">_timer_int_handler</a><BR>
+ <LI><a href="#[23]">idle_new</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[23]">idle_new</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4a]">LlcIrqConnect</a> from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1) referenced from llcc.o(.devconfig.init)
+ <LI><a href="#[0]">Reset_Handler</a> from startup.o(.text) referenced 2 times from startup.o(RESET)
+ <LI><a href="#[17]">SystemInit</a> from system.o(.init.once.text."..\\..\\..\\..\\ext\\lib\\actions\\startup\\system.c".0) referenced from startup.o(.text)
+ <LI><a href="#[2]">__hard_fault</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced 10 times from startup.o(RESET)
+ <LI><a href="#[1e]">__indicate_cb</a> from wechat_service.o(i.__indicate_cb) referenced from wechat_service.o(i.wechat_send_data)
+ <LI><a href="#[18]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup.o(.text)
+ <LI><a href="#[1]">__nmi</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from startup.o(RESET)
+ <LI><a href="#[4]">__pendsv</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from startup.o(RESET)
+ <LI><a href="#[3]">__svc</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from startup.o(RESET)
+ <LI><a href="#[4d]">_bt_host_config_init</a> from bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".9) referenced from bt_host_config_init.o(.devconfig.init)
+ <LI><a href="#[4b]">_bt_llcc_init</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from llcc.o(.devconfig.init)
+ <LI><a href="#[6]">_isr_wrapper</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced 32 times from startup.o(RESET)
+ <LI><a href="#[47]">_sys_clock_driver_init</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from sys_clock_init.o(.devconfig.init)
+ <LI><a href="#[1c]">_sys_device_do_config_level</a> from device.o(i._sys_device_do_config_level) referenced from entry.o(i.main)
+ <LI><a href="#[5]">_timer_int_handler</a> from startup.o(.text) referenced from startup.o(RESET)
+ <LI><a href="#[15]">airsync_proto_ind_status_cb</a> from main.o(i.airsync_proto_ind_status_cb) referenced from main.o(.init.once.text."..\\src\\main.c".0)
+ <LI><a href="#[16]">airsync_proto_recv_cb</a> from main.o(i.airsync_proto_recv_cb) referenced from main.o(.init.once.text."..\\src\\main.c".0)
+ <LI><a href="#[1d]">app_main</a> from main.o(i.app_main) referenced from entry.o(i.main)
+ <LI><a href="#[30]">att_cfm_sent</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[2f]">att_cfm_sent_new</a> from bt_host_patch.o(i.att_cfm_sent_new) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[3a]">att_req_sent_new</a> from bt_host_patch.o(i.att_req_sent_new) referenced from bt_host_patch.o(.patch_hw_code)
+ <LI><a href="#[32]">att_rsp_sent</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[31]">att_rsp_sent_new</a> from bt_host_patch.o(i.att_rsp_sent_new) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[44]">board_early_init</a> from board.o(.init.once.text."..\\..\\..\\..\\boards\\board.c".2) referenced from board.o(.devconfig.init)
+ <LI><a href="#[3f]">bt_gatt_attr_read_ccc</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from wechat_service.o(.data)
+ <LI><a href="#[3d]">bt_gatt_attr_read_chrc</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced 3 times from wechat_service.o(.data)
+ <LI><a href="#[3c]">bt_gatt_attr_read_service</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from wechat_service.o(.data)
+ <LI><a href="#[40]">bt_gatt_attr_write_ccc</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from wechat_service.o(.data)
+ <LI><a href="#[14]">bt_host_config_init</a> from bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".8) referenced from bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".9)
+ <LI><a href="#[19]">bt_ready</a> from main.o(.init.once.text."..\\src\\main.c".0) referenced from main.o(i.app_main)
+ <LI><a href="#[8]">compute_checksum</a> from llc_hci.o(i.compute_checksum) referenced 2 times from startup.o(.asm_patch)
+ <LI><a href="#[42]">connected</a> from wechat_service.o(i.connected) referenced from wechat_service.o(.data)
+ <LI><a href="#[2a]">device_busy_clear</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from device.o(.patch_hw_func)
+ <LI><a href="#[29]">device_busy_clear_new</a> from device.o(i.device_busy_clear_new) referenced from device.o(.patch_hw_func)
+ <LI><a href="#[28]">device_busy_set</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from device.o(.patch_hw_func)
+ <LI><a href="#[27]">device_busy_set_new</a> from device.o(i.device_busy_set_new) referenced from device.o(.patch_hw_func)
+ <LI><a href="#[1b]">device_get_binding</a> from device.o(i.device_get_binding) referenced from entry.o(i.main)
+ <LI><a href="#[45]">device_pm_control_nop</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced 8 times from board.o(.devconfig.init)
+ <LI><a href="#[43]">disconnected</a> from wechat_service.o(i.disconnected) referenced from wechat_service.o(.data)
+ <LI><a href="#[36]">gatt_ccc_changed</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[35]">gatt_ccc_changed_new</a> from bt_host_patch.o(i.gatt_ccc_changed_new) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[26]">hci_tx_failure</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from llc_hci.o(.patch_hw_func)
+ <LI><a href="#[25]">hci_tx_failure_new</a> from llc_hci.o(i.hci_tx_failure_new) referenced from llc_hci.o(.patch_hw_func)
+ <LI><a href="#[38]">hci_vs_read_done_new</a> from llc_hci.o(i.hci_vs_read_done_new) referenced from llc_hci.o(.patch_hw_code)
+ <LI><a href="#[24]">idle</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from soc_pm.o(.patch_hw_func)
+ <LI><a href="#[23]">idle_new</a> from soc_pm.o(i.idle_new) referenced from soc_pm.o(.patch_hw_func)
+ <LI><a href="#[3b]">ind_ch_ccc_cfg_changed</a> from wechat_service.o(i.ind_ch_ccc_cfg_changed) referenced from wechat_service.o(.data)
+ <LI><a href="#[2c]">k_delayed_work_cancel</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from system_work_q.o(.patch_hw_func)
+ <LI><a href="#[4c]">k_sys_work_q_init</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from system_work_q.o(.devconfig.init)
+ <LI><a href="#[1a]">kernel_config_init</a> from kernel_config_init.o(.init.once.text."..\\..\\..\\..\\kernel\\kernel_config_init.c".4) referenced from entry.o(i.main)
+ <LI><a href="#[39]">le_conn_update_new</a> from bt_host_patch.o(i.le_conn_update_new) referenced from bt_host_patch.o(.patch_hw_code)
+ <LI><a href="#[a]">llc_init_all_trim_upload_new</a> from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".15) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0)
+ <LI><a href="#[11]">llcc_clk_enable_req_handler</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+ <LI><a href="#[d]">llcc_rxcmd_valid_handler_new</a> from llc_hci.o(i.llcc_rxcmd_valid_handler_new) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+ <LI><a href="#[10]">llcc_rxdmal_done_handler_new</a> from llc_hci.o(i.llcc_rxdmal_done_handler_new) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+ <LI><a href="#[e]">llcc_rxevt_valid_handler</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+ <LI><a href="#[f]">llcc_txdmal_done_handler</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+ <LI><a href="#[c]">llcc_write_new</a> from llc_hci.o(i.llcc_write_new) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0)
+ <LI><a href="#[7]">main</a> from entry.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[2b]">new_k_delayed_work_cancel</a> from system_work_q.o(i.new_k_delayed_work_cancel) referenced from system_work_q.o(.patch_hw_func)
+ <LI><a href="#[b]">p_llc_init_trim_up_load_new</a> from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".17) referenced from llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0)
+ <LI><a href="#[37]">p_llcc_rx_dmal_done</a> from startup.o(.asm_patch) referenced from llc_hci.o(.patch_hw_code)
+ <LI><a href="#[41]">rd_ch_read_cb</a> from wechat_service.o(i.rd_ch_read_cb) referenced from wechat_service.o(.data)
+ <LI><a href="#[13]">sc_ccc_cfg_changed</a> from bt_host_config_init.o(i.sc_ccc_cfg_changed) referenced from bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".8)
+ <LI><a href="#[34]">smp_reset</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[33]">smp_reset_new</a> from bt_host_patch.o(i.smp_reset_new) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[22]">storage_clear</a> from storage.o(i.storage_clear) referenced from storage.o(.constdata)
+ <LI><a href="#[4e]">storage_init</a> from storage.o(i.storage_init) referenced from storage.o(.devconfig.init)
+ <LI><a href="#[20]">storage_read</a> from storage.o(i.storage_read) referenced from storage.o(.constdata)
+ <LI><a href="#[21]">storage_write</a> from storage.o(i.storage_write) referenced from storage.o(.constdata)
+ <LI><a href="#[9]">timer_irq_handler</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from board.o(.init.once.text."..\\..\\..\\..\\boards\\board.c".2)
+ <LI><a href="#[48]">uart_acts_init</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from uart_acts.o(.devconfig.init)
+ <LI><a href="#[1f]">uart_acts_irq_config_0</a> from uart_acts.o(.init.once.text."..\\..\\..\\..\\drivers\\uart\\uart_acts.c".0) referenced from uart_acts.o(.constdata)
+ <LI><a href="#[12]">uart_acts_isr</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from uart_acts.o(.init.once.text."..\\..\\..\\..\\drivers\\uart\\uart_acts.c".0)
+ <LI><a href="#[46]">uart_console_init_new</a> from uart_console.o(i.uart_console_init_new) referenced from uart_console.o(.devconfig.init)
+ <LI><a href="#[49]">uart_device_ctrl</a> from uart_acts.o(i.uart_device_ctrl) referenced from uart_acts.o(.devconfig.init)
+ <LI><a href="#[2e]">update_conn_param</a> from rom_zephyr_symdefs.txt(ABSOLUTE) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[2d]">update_conn_param_new</a> from bt_host_patch.o(i.update_conn_param_new) referenced from bt_host_patch.o(.patch_hw_func)
+ <LI><a href="#[3e]">wr_ch_write_cb</a> from wechat_service.o(i.wr_ch_write_cb) referenced from wechat_service.o(.data)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[c7]"></a>__aeabi_idivmod</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;str2bt_addr (via Veneer)
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;device_busy_set_new (via Veneer)
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;device_busy_clear_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7f]"></a>strlen</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;str2bt_addr (via Veneer)
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[c9]"></a>strcmp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;device_get_binding (via Veneer)
+</UL>
+
+<P><STRONG><a name="[ad]"></a>memcmp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_cmp (via Veneer)
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_store_ccc (via Veneer)
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6d]"></a>main_thread_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kernel_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6e]"></a>idle_thread_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kernel_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6f]"></a>interrupt_stack_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kernel_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[aa]"></a>k_sem_give</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_rsp_sent_new (via Veneer)
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_req_sent_new (via Veneer)
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_cfm_sent_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[45]"></a>device_pm_control_nop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 7]<UL><LI> uart_console.o(.devconfig.init)
+<LI> sys_clock_init.o(.devconfig.init)
+<LI> llcc.o(.devconfig.init)
+<LI> system_work_q.o(.devconfig.init)
+<LI> storage.o(.devconfig.init)
+<LI> board.o(.devconfig.init)
+<LI> bt_host_config_init.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[28]"></a>device_busy_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> device.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[2a]"></a>device_busy_clear</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> device.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[24]"></a>idle</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> soc_pm.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[9c]"></a>k_sleep</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__send_and_wait (via Veneer)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle (via Veneer)
+</UL>
+
+<P><STRONG><a name="[95]"></a>k_mutex_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready (via Veneer)
+</UL>
+
+<P><STRONG><a name="[9e]"></a>k_mutex_lock</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_recv_cb (via Veneer)
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_ind_status_cb (via Veneer)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle (via Veneer)
+</UL>
+
+<P><STRONG><a name="[9f]"></a>k_mutex_unlock</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_recv_cb (via Veneer)
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_ind_status_cb (via Veneer)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle (via Veneer)
+</UL>
+
+<P><STRONG><a name="[fd]"></a>k_mem_slab_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[fe]"></a>k_mem_slab_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc (via Veneer)
+</UL>
+
+<P><STRONG><a name="[fc]"></a>k_mem_slab_free</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2c]"></a>k_delayed_work_cancel</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;smp_reset_new (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> system_work_q.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[ab]"></a>k_delayed_work_submit_to_queue</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_conn_param_new (via Veneer)
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_req_sent_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[70]"></a>sys_work_queue_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kernel_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[4c]"></a>k_sys_work_q_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> system_work_q.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[109]"></a>uart_console_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_console_init_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[48]"></a>uart_acts_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> uart_acts.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[12]"></a>uart_acts_isr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> uart_acts.o(.init.once.text."..\\..\\..\\..\\drivers\\uart\\uart_acts.c".0)
+</UL>
+<P><STRONG><a name="[9]"></a>timer_irq_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> board.o(.init.once.text."..\\..\\..\\..\\boards\\board.c".2)
+</UL>
+<P><STRONG><a name="[47]"></a>_sys_clock_driver_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> sys_clock_init.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[4b]"></a>_bt_llcc_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[11]"></a>llcc_clk_enable_req_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+</UL>
+<P><STRONG><a name="[f6]"></a>llcc_wdog_tx_ena</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[f5]"></a>platform_wake_lock_inc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[f2]"></a>llcc_tx_cmd_crc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_soft_reset_ack_cmd_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[f8]"></a>llcc_tx_xfer_req_cmd</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[f7]"></a>llcc_tx_xfer_req2_cmd</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[ec]"></a>llcc_tx_error2_cmd</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[f9]"></a>llcc_dma_setup_tx</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[ed]"></a>llcc_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[26]"></a>hci_tx_failure</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> llc_hci.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[f0]"></a>llcc_tx_retry_helper</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[e]"></a>llcc_rxevt_valid_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+</UL>
+<P><STRONG><a name="[ef]"></a>llcc_rxcmd_valid_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[f]"></a>llcc_txdmal_done_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+</UL>
+<P><STRONG><a name="[f1]"></a>llcc_rxdmal_done_handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rxdmal_done_handler_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[69]"></a>llc_hci_buf_free</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_tx_command (via Veneer)
+</UL>
+
+<P><STRONG><a name="[67]"></a>llc_init_tx_message</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_tx_command (via Veneer)
+</UL>
+
+<P><STRONG><a name="[68]"></a>llc_init_wait_for_rx_message</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_tx_command (via Veneer)
+</UL>
+
+<P><STRONG><a name="[61]"></a>llc_init_trim_upload</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_upload_ic_trim_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[60]"></a>llcc_compose_trim</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_upload_ic_trim_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[63]"></a>llcc_upload_board_trim</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_all_trim_upload_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[64]"></a>llcc_upload_tx_trim</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_all_trim_upload_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[e8]"></a>hci_vs_read_done</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_read_done_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[b1]"></a>nvram_config_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_store_ccc (via Veneer)
+</UL>
+
+<P><STRONG><a name="[8b]"></a>nvram_config_get_factory</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[52]"></a>printk</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wr_ch_write_cb (via Veneer)
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rd_ch_read_cb (via Veneer)
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ind_ch_ccc_cfg_changed (via Veneer)
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disconnected (via Veneer)
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connected (via Veneer)
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__send_and_wait (via Veneer)
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__indicate_cb (via Veneer)
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc (via Veneer)
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_send_data (via Veneer)
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_init (via Veneer)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_advertise (via Veneer)
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init (via Veneer)
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free (via Veneer)
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec (via Veneer)
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_recv_cb (via Veneer)
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_ind_status_cb (via Veneer)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle (via Veneer)
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready (via Veneer)
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_pm_reboot (via Veneer)
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_hw_code (via Veneer)
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_hw_func (via Veneer)
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main (via Veneer)
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_store_ccc (via Veneer)
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sc_ccc_cfg_changed (via Veneer)
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_llc_init_trim_up_load_new (via Veneer)
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_read_done_new (via Veneer)
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_tx_failure_new (via Veneer)
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys (via Veneer)
+</UL>
+
+<P><STRONG><a name="[ba]"></a>print_buffer</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec (via Veneer)
+</UL>
+
+<P><STRONG><a name="[e5]"></a>bt_rpa_irk_matches</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys (via Veneer)
+</UL>
+
+<P><STRONG><a name="[8f]"></a>enable_scan_with_identity</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[71]"></a>bt_tx_thread_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[72]"></a>bt_rx_thread_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[73]"></a>bt_hci_cmd_pool_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[74]"></a>bt_hci_rx_pool_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[82]"></a>bt_enable_smp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2e]"></a>update_conn_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_conn_update_new (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[85]"></a>bt_set_delay_time_read_remote_features</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7d]"></a>bt_tx_poll_event_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[86]"></a>hci_set_le_sup_feat</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[a6]"></a>bt_enable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[e6]"></a>bt_addr_le_is_bonded</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gatt_ccc_changed_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[10a]"></a>bt_le_adv_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_advertise (via Veneer)
+</UL>
+
+<P><STRONG><a name="[10b]"></a>bt_le_adv_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_advertise (via Veneer)
+</UL>
+
+<P><STRONG><a name="[102]"></a>bt_storage_register</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[91]"></a>bt_le_oob_get_local</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_init (via Veneer)
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready (via Veneer)
+</UL>
+
+<P><STRONG><a name="[8e]"></a>hci_vs_cfg_pwr_mgmt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[8d]"></a>hci_vs_cfg_bd_addr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[87]"></a>hci_vs_cfg_acl_bufs</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[89]"></a>hci_vs_cfg_version</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[88]"></a>hci_vs_cfg_max_conn</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[75]"></a>bt_acl_tx_pool_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7a]"></a>bt_conn_struct_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[79]"></a>bt_conn_tx_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[10e]"></a>bt_conn_cb_register</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[e9]"></a>bt_conn_disconnect</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_conn_update_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[ea]"></a>bt_conn_le_param_update</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_conn_update_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[77]"></a>bt_l2cap_le_max_credits_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[78]"></a>bt_l2cap_pramter_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7c]"></a>bt_l2cap_pool_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7e]"></a>bt_att_paramter_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[76]"></a>bt_prep_pool_int</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7b]"></a>bt_req_pool_int</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[a9]"></a>att_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_rsp_sent_new (via Veneer)
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_req_sent_new (via Veneer)
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_cfm_sent_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[32]"></a>att_rsp_sent</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[30]"></a>att_cfm_sent</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[3f]"></a>bt_gatt_attr_read_ccc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[3c]"></a>bt_gatt_attr_read_service</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[80]"></a>bt_gap_svc_config_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[81]"></a>bt_gatt_svc_config_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[10d]"></a>bt_gatt_service_register</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[100]"></a>bt_gatt_attr_read</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rd_ch_read_cb (via Veneer)
+</UL>
+
+<P><STRONG><a name="[3d]"></a>bt_gatt_attr_read_chrc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[36]"></a>gatt_ccc_changed</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[40]"></a>bt_gatt_attr_write_ccc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[9b]"></a>bt_gatt_indicate</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__send_and_wait (via Veneer)
+</UL>
+
+<P><STRONG><a name="[83]"></a>bt_smp_pool_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[34]"></a>smp_reset</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[84]"></a>bt_host_keys_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[57]"></a>acts_delay_us</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[105]"></a>acts_reset_peripheral</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_resume_device_from_suspend (via Veneer)
+</UL>
+
+<P><STRONG><a name="[5b]"></a>acts_pinmux_setup_pins</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[a5]"></a>app_get_wake_lock</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[90]"></a>app_release_wake_lock</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready (via Veneer)
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[58]"></a>acts_request_vd12_pd</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[59]"></a>acts_request_vd12_largebias</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[56]"></a>acts_set_vdd</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[106]"></a>acts_clock_peripheral_enable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_resume_device_from_suspend (via Veneer)
+</UL>
+
+<P><STRONG><a name="[108]"></a>acts_clock_peripheral_disable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_suspend_device (via Veneer)
+</UL>
+
+<P><STRONG><a name="[5a]"></a>acts_request_rc_3M</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[62]"></a>acts_set_vd12_before_efuse_read</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_all_trim_upload_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[65]"></a>acts_set_vd12_after_efuse_read</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_all_trim_upload_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[55]"></a>acts_efuse_read</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_ic_feature (via Veneer)
+</UL>
+
+<P><STRONG><a name="[4]"></a>__pendsv</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>__svc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6b]"></a>_arch_irq_enable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_irq_config_0 (via Veneer)
+</UL>
+
+<P><STRONG><a name="[5d]"></a>_irq_priority_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_irq_config_0 (via Veneer)
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init (via Veneer)
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LlcIrqConnect (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2]"></a>__hard_fault</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>_isr_wrapper</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[fb]"></a>_PrepC</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1]"></a>__nmi</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[ff]"></a>atomic_get</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;smp_reset_new (via Veneer)
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;new_k_delayed_work_cancel (via Veneer)
+</UL>
+
+<P><STRONG><a name="[101]"></a>atomic_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;smp_reset_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[a8]"></a>atomic_or</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_set_bit (via Veneer)
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;device_busy_set_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[c8]"></a>atomic_and</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rom_zephyr_symdefs.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;new_k_delayed_work_cancel (via Veneer)
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;device_busy_clear_new (via Veneer)
+</UL>
+
+<P><STRONG><a name="[18]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.text)
+</UL>
+<P><STRONG><a name="[10f]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[4f]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[99]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[110]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[111]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[112]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[113]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[114]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[115]"></a>p_llcc_rx_cmd_valid</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, startup.o(.asm_patch), UNUSED)
+
+<P><STRONG><a name="[37]"></a>p_llcc_rx_dmal_done</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, startup.o(.asm_patch))
+<BR>[Address Reference Count : 1]<UL><LI> llc_hci.o(.patch_hw_code)
+</UL>
+<P><STRONG><a name="[51]"></a>patch_hw_func</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, soc_patch.o(.init.once.text."..\\..\\..\\..\\arch\\soc\\atb110x\\soc_patch.c".0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = patch_hw_func
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init
+</UL>
+
+<P><STRONG><a name="[53]"></a>patch_hw_code</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, soc_patch.o(.init.once.text."..\\..\\..\\..\\arch\\soc\\atb110x\\soc_patch.c".1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = patch_hw_code
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init
+</UL>
+
+<P><STRONG><a name="[5c]"></a>patch_sw</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, soc_patch.o(.init.once.text."..\\..\\..\\..\\arch\\soc\\atb110x\\soc_patch.c".2))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init
+</UL>
+
+<P><STRONG><a name="[54]"></a>set_ic_feature</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, board.o(.init.once.text."..\\..\\..\\..\\boards\\board.c".1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = set_ic_feature
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_efuse_read (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_early_init
+</UL>
+
+<P><STRONG><a name="[44]"></a>board_early_init</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, board.o(.init.once.text."..\\..\\..\\..\\boards\\board.c".2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = board_early_init &rArr; patch_hw_code
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_set_vdd (via Veneer)
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_request_vd12_pd (via Veneer)
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_request_vd12_largebias (via Veneer)
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_request_rc_3M (via Veneer)
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_pinmux_setup_pins (via Veneer)
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_delay_us (via Veneer)
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_irq_priority_set (via Veneer)
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_ic_feature
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_sw
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_hw_code
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_hw_func
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> board.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[5e]"></a>patch_llc_init_all_trim_upload</STRONG> (Thumb, 80 bytes, Stack size 0 bytes, llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LlcIrqConnect
+</UL>
+
+<P><STRONG><a name="[4a]"></a>LlcIrqConnect</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LlcIrqConnect
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_irq_priority_set (via Veneer)
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;patch_llc_init_all_trim_upload
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[5f]"></a>llcc_upload_ic_trim_new</STRONG> (Thumb, 40 bytes, Stack size 40 bytes, llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".14))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = llcc_upload_ic_trim_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_compose_trim (via Veneer)
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_trim_upload (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_all_trim_upload_new
+</UL>
+
+<P><STRONG><a name="[a]"></a>llc_init_all_trim_upload_new</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".15))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = llc_init_all_trim_upload_new &rArr; llcc_upload_ic_trim_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_upload_tx_trim (via Veneer)
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_upload_board_trim (via Veneer)
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_set_vd12_before_efuse_read (via Veneer)
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_set_vd12_after_efuse_read (via Veneer)
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_upload_ic_trim_new
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0)
+</UL>
+<P><STRONG><a name="[b]"></a>p_llc_init_trim_up_load_new</STRONG> (Thumb, 138 bytes, Stack size 296 bytes, llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".17))
+<BR><BR>[Stack]<UL><LI>Max Depth = 320<LI>Call Chain = p_llc_init_trim_up_load_new &rArr; llc_init_tx_command
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_tx_command
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0)
+</UL>
+<P><STRONG><a name="[17]"></a>SystemInit</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, system.o(.init.once.text."..\\..\\..\\..\\ext\\lib\\actions\\startup\\system.c".0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SystemInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_uart_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.text)
+</UL>
+<P><STRONG><a name="[1a]"></a>kernel_config_init</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, kernel_config_init.o(.init.once.text."..\\..\\..\\..\\kernel\\kernel_config_init.c".4))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = kernel_config_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_work_queue_init (via Veneer)
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_thread_init (via Veneer)
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;interrupt_stack_init (via Veneer)
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idle_thread_init (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry.o(i.main)
+</UL>
+<P><STRONG><a name="[14]"></a>bt_host_config_init</STRONG> (Thumb, 396 bytes, Stack size 40 bytes, bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = bt_host_config_init &rArr; str2bt_addr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvram_config_get_factory (via Veneer)
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_cfg_version (via Veneer)
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_cfg_pwr_mgmt (via Veneer)
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_cfg_max_conn (via Veneer)
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_cfg_bd_addr (via Veneer)
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_cfg_acl_bufs (via Veneer)
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_set_le_sup_feat (via Veneer)
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enable_scan_with_identity (via Veneer)
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_tx_thread_init (via Veneer)
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_tx_poll_event_init (via Veneer)
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_smp_pool_init (via Veneer)
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_set_delay_time_read_remote_features (via Veneer)
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_rx_thread_init (via Veneer)
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_req_pool_int (via Veneer)
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_prep_pool_int (via Veneer)
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_l2cap_pramter_init (via Veneer)
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_l2cap_pool_init (via Veneer)
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_l2cap_le_max_credits_init (via Veneer)
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_keys_init (via Veneer)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_hci_rx_pool_init (via Veneer)
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_hci_cmd_pool_init (via Veneer)
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_svc_config_init (via Veneer)
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gap_svc_config_init (via Veneer)
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_enable_smp (via Veneer)
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_conn_tx_init (via Veneer)
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_conn_struct_init (via Veneer)
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_att_paramter_init (via Veneer)
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_acl_tx_pool_init (via Veneer)
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;str2bt_addr
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".9)
+</UL>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, startup.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[f4]"></a>_arch_irq_lock_s</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_pm_reboot
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;new_k_delayed_work_cancel
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new
+</UL>
+
+<P><STRONG><a name="[f3]"></a>_arch_irq_unlock_s</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;new_k_delayed_work_cancel
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new
+</UL>
+
+<P><STRONG><a name="[5]"></a>_timer_int_handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_int_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_int_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6a]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wx_set_mac_address
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_send_data
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_recv_cb
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_copy
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_store_ccc
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_llc_init_trim_up_load_new
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_varint32_bits
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_write
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_read
+</UL>
+
+<P><STRONG><a name="[8a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init
+</UL>
+
+<P><STRONG><a name="[116]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[96]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[117]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[118]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[97]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[b0]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_send_data
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_clear
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_store_ccc
+</UL>
+
+<P><STRONG><a name="[119]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[98]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[50]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[11a]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[103]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, storage.o(i.__ARM_common_switch8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_write
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_read
+</UL>
+
+<P><STRONG><a name="[11b]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[11c]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[11d]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[1c]"></a>_sys_device_do_config_level</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, device.o(i._sys_device_do_config_level))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _sys_device_do_config_level
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry.o(i.main)
+</UL>
+<P><STRONG><a name="[1d]"></a>app_main</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, main.o(i.app_main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = app_main &rArr; airsync_proto_handle &rArr; data_produce_func_send &rArr; epb_pack_send_data_request &rArr; epb_set_message &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_enable (via Veneer)
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_release_wake_lock (via Veneer)
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_get_wake_lock (via Veneer)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry.o(i.main)
+</UL>
+<P><STRONG><a name="[2f]"></a>att_cfm_sent_new</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, bt_host_patch.o(i.att_cfm_sent_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = att_cfm_sent_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_sem_give (via Veneer)
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_get (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[3a]"></a>att_req_sent_new</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bt_host_patch.o(i.att_req_sent_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = att_req_sent_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_sem_give (via Veneer)
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_delayed_work_submit_to_queue (via Veneer)
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_get (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_code)
+</UL>
+<P><STRONG><a name="[31]"></a>att_rsp_sent_new</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, bt_host_patch.o(i.att_rsp_sent_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = att_rsp_sent_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_sem_give (via Veneer)
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;att_get (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[af]"></a>bt_gatt_store_ccc</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, bt_host_patch.o(i.bt_gatt_store_ccc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = bt_gatt_store_ccc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvram_config_set (via Veneer)
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp (via Veneer)
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gatt_ccc_changed_new
+</UL>
+
+<P><STRONG><a name="[8]"></a>compute_checksum</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, llc_hci.o(i.compute_checksum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = compute_checksum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_write_new
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.asm_patch)
+</UL>
+<P><STRONG><a name="[a4]"></a>data_consume_func_rec</STRONG> (Thumb, 452 bytes, Stack size 48 bytes, wechat_protocol.o(i.data_consume_func_rec))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = data_consume_func_rec &rArr; epb_unpack_init_response &rArr; epb_unpack_base_response &rArr; epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_crc32
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_buffer (via Veneer)
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push_free
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push_free
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response_free
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push_free
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response_free
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response_free
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_recv_cb
+</UL>
+
+<P><STRONG><a name="[a0]"></a>data_produce_func_send</STRONG> (Thumb, 278 bytes, Stack size 120 bytes, wechat_protocol.o(i.data_produce_func_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = data_produce_func_send &rArr; epb_pack_send_data_request &rArr; epb_set_message &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_send_data_request_pack_size
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_init_request_pack_size
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_auth_request_pack_size
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle
+</UL>
+
+<P><STRONG><a name="[6c]"></a>debug_uart_init</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, system.o(i.debug_uart_init))
+<BR><BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[fa]"></a>debug_uart_put_char</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, system.o(i.debug_uart_put_char))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[29]"></a>device_busy_clear_new</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, device.o(i.device_busy_clear_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = device_busy_clear_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_and (via Veneer)
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> device.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[27]"></a>device_busy_set_new</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, device.o(i.device_busy_set_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = device_busy_set_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_or (via Veneer)
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> device.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[1b]"></a>device_get_binding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, device.o(i.device_get_binding))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = device_get_binding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_pm_reboot
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry.o(i.main)
+</UL>
+<P><STRONG><a name="[c0]"></a>epb_auth_request_pack_size</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, epb_mmbp.o(i.epb_auth_request_pack_size))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = epb_auth_request_pack_size &rArr; epb_length_delimited_pack_size &rArr; epb_varint32_pack_size
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_varint32_pack_size
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_length_delimited_pack_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+</UL>
+
+<P><STRONG><a name="[cc]"></a>epb_get_bytes</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, epb.o(i.epb_get_bytes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_varint32_bits
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_tag_value_offset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_string
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+</UL>
+
+<P><STRONG><a name="[cf]"></a>epb_get_enum</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_get_enum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = epb_get_enum &rArr; epb_get_uint32 &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_uint32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+</UL>
+
+<P><STRONG><a name="[d1]"></a>epb_get_int32</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_get_int32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = epb_get_int32 &rArr; epb_get_uint32 &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_uint32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+</UL>
+
+<P><STRONG><a name="[d2]"></a>epb_get_message</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_get_message))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = epb_get_message &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+</UL>
+
+<P><STRONG><a name="[dc]"></a>epb_get_packed_size</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, epb.o(i.epb_get_packed_size))
+<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_base_request
+</UL>
+
+<P><STRONG><a name="[d3]"></a>epb_get_string</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_get_string))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+</UL>
+
+<P><STRONG><a name="[d0]"></a>epb_get_uint32</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, epb.o(i.epb_get_uint32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = epb_get_uint32 &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_varint32_bits
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_tag_value_offset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_int32
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_enum
+</UL>
+
+<P><STRONG><a name="[d4]"></a>epb_has_tag</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, epb.o(i.epb_has_tag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = epb_has_tag &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_tag_value_offset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+</UL>
+
+<P><STRONG><a name="[c3]"></a>epb_init_request_pack_size</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, epb_mmbp.o(i.epb_init_request_pack_size))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = epb_init_request_pack_size &rArr; epb_length_delimited_pack_size &rArr; epb_varint32_pack_size
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_length_delimited_pack_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+</UL>
+
+<P><STRONG><a name="[ca]"></a>epb_length_delimited_pack_size</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, epb.o(i.epb_length_delimited_pack_size))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_length_delimited_pack_size &rArr; epb_varint32_pack_size
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_varint32_pack_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_send_data_request_pack_size
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_init_request_pack_size
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_auth_request_pack_size
+</UL>
+
+<P><STRONG><a name="[c2]"></a>epb_pack_auth_request</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, epb_mmbp.o(i.epb_pack_auth_request))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = epb_pack_auth_request &rArr; epb_set_string &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_base_request
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_string
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_message
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_int32
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_enum
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_packed_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+</UL>
+
+<P><STRONG><a name="[d6]"></a>epb_pack_base_request</STRONG> (Thumb, 18 bytes, Stack size 24 bytes, epb_mmbp.o(i.epb_pack_base_request))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = epb_pack_base_request
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_packed_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+</UL>
+
+<P><STRONG><a name="[d5]"></a>epb_pack_init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, epb.o(i.epb_pack_init))
+<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_base_request
+</UL>
+
+<P><STRONG><a name="[c4]"></a>epb_pack_init_request</STRONG> (Thumb, 126 bytes, Stack size 40 bytes, epb_mmbp.o(i.epb_pack_init_request))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = epb_pack_init_request &rArr; epb_set_message &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_base_request
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_message
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_packed_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+</UL>
+
+<P><STRONG><a name="[c6]"></a>epb_pack_send_data_request</STRONG> (Thumb, 118 bytes, Stack size 40 bytes, epb_mmbp.o(i.epb_pack_send_data_request))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = epb_pack_send_data_request &rArr; epb_set_message &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_base_request
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_message
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_enum
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_packed_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+</UL>
+
+<P><STRONG><a name="[c5]"></a>epb_send_data_request_pack_size</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, epb_mmbp.o(i.epb_send_data_request_pack_size))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = epb_send_data_request_pack_size &rArr; epb_length_delimited_pack_size &rArr; epb_varint32_pack_size
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_varint32_pack_size
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_length_delimited_pack_size
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+</UL>
+
+<P><STRONG><a name="[d8]"></a>epb_set_bytes</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, epb.o(i.epb_set_bytes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_varint32_bits
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_tag
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_string
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_message
+</UL>
+
+<P><STRONG><a name="[da]"></a>epb_set_enum</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_set_enum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = epb_set_enum &rArr; epb_set_uint32 &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_uint32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+</UL>
+
+<P><STRONG><a name="[d9]"></a>epb_set_int32</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_set_int32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = epb_set_int32 &rArr; epb_set_uint32 &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_uint32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+</UL>
+
+<P><STRONG><a name="[d7]"></a>epb_set_message</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_set_message))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = epb_set_message &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+</UL>
+
+<P><STRONG><a name="[db]"></a>epb_set_string</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, epb.o(i.epb_set_string))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = epb_set_string &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+</UL>
+
+<P><STRONG><a name="[e0]"></a>epb_set_uint32</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, epb.o(i.epb_set_uint32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = epb_set_uint32 &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_varint32_bits
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_tag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_int32
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_enum
+</UL>
+
+<P><STRONG><a name="[b2]"></a>epb_unpack_auth_response</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, epb_mmbp.o(i.epb_unpack_auth_response))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = epb_unpack_auth_response &rArr; epb_unpack_base_response &rArr; epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[b3]"></a>epb_unpack_auth_response_free</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, epb_mmbp.o(i.epb_unpack_auth_response_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_unpack_auth_response_free &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[e3]"></a>epb_unpack_base_push</STRONG> (Thumb, 26 bytes, Stack size 24 bytes, epb_mmbp.o(i.epb_unpack_base_push))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = epb_unpack_base_push &rArr; mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+</UL>
+
+<P><STRONG><a name="[e2]"></a>epb_unpack_base_response</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, epb_mmbp.o(i.epb_unpack_base_response))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = epb_unpack_base_response &rArr; epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_string
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_int32
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+</UL>
+
+<P><STRONG><a name="[e1]"></a>epb_unpack_init</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, epb.o(i.epb_unpack_init))
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_push
+</UL>
+
+<P><STRONG><a name="[b4]"></a>epb_unpack_init_response</STRONG> (Thumb, 408 bytes, Stack size 40 bytes, epb_mmbp.o(i.epb_unpack_init_response))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = epb_unpack_init_response &rArr; epb_unpack_base_response &rArr; epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_uint32
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_string
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_int32
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_enum
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[b5]"></a>epb_unpack_init_response_free</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, epb_mmbp.o(i.epb_unpack_init_response_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_unpack_init_response_free &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[b9]"></a>epb_unpack_recv_data_push</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, epb_mmbp.o(i.epb_unpack_recv_data_push))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = epb_unpack_recv_data_push &rArr; epb_get_message &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_push
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_enum
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[bb]"></a>epb_unpack_recv_data_push_free</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, epb_mmbp.o(i.epb_unpack_recv_data_push_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_unpack_recv_data_push_free &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[b7]"></a>epb_unpack_send_data_response</STRONG> (Thumb, 112 bytes, Stack size 32 bytes, epb_mmbp.o(i.epb_unpack_send_data_response))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = epb_unpack_send_data_response &rArr; epb_unpack_base_response &rArr; epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[b8]"></a>epb_unpack_send_data_response_free</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, epb_mmbp.o(i.epb_unpack_send_data_response_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_unpack_send_data_response_free &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[be]"></a>epb_unpack_switch_backgroud_push</STRONG> (Thumb, 100 bytes, Stack size 32 bytes, epb_mmbp.o(i.epb_unpack_switch_backgroud_push))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = epb_unpack_switch_backgroud_push &rArr; epb_get_message &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_push
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_enum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[bf]"></a>epb_unpack_switch_backgroud_push_free</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, epb_mmbp.o(i.epb_unpack_switch_backgroud_push_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_unpack_switch_backgroud_push_free &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[bc]"></a>epb_unpack_switch_view_push</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, epb_mmbp.o(i.epb_unpack_switch_view_push))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = epb_unpack_switch_view_push &rArr; epb_get_message &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_push
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_message
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_enum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[bd]"></a>epb_unpack_switch_view_push_free</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, epb_mmbp.o(i.epb_unpack_switch_view_push_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_unpack_switch_view_push_free &rArr; mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[cb]"></a>epb_varint32_pack_size</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, epb.o(i.epb_varint32_pack_size))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = epb_varint32_pack_size
+</UL>
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sizeof_tag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_send_data_request_pack_size
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_auth_request_pack_size
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_length_delimited_pack_size
+</UL>
+
+<P><STRONG><a name="[e4]"></a>find_bt_keys</STRONG> (Thumb, 240 bytes, Stack size 40 bytes, storage.o(i.find_bt_keys))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = find_bt_keys &rArr; bt_addr_le_copy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_copy
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_cmp
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp (via Veneer)
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_rpa_irk_matches (via Veneer)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_clear
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_write
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_read
+</UL>
+
+<P><STRONG><a name="[35]"></a>gatt_ccc_changed_new</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, bt_host_patch.o(i.gatt_ccc_changed_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = gatt_ccc_changed_new &rArr; bt_gatt_store_ccc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_is_bonded (via Veneer)
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_store_ccc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[25]"></a>hci_tx_failure_new</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, llc_hci.o(i.hci_tx_failure_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hci_tx_failure_new &rArr; sys_pm_reboot &rArr; device_get_binding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_pm_reboot
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llc_hci.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[38]"></a>hci_vs_read_done_new</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, llc_hci.o(i.hci_vs_read_done_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = hci_vs_read_done_new &rArr; sys_pm_reboot &rArr; device_get_binding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_pm_reboot
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_read_done (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llc_hci.o(.patch_hw_code)
+</UL>
+<P><STRONG><a name="[23]"></a>idle_new</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, soc_pm.o(i.idle_new))
+<BR><BR>[Calls]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idle_new
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idle_new
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> soc_pm.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[39]"></a>le_conn_update_new</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, bt_host_patch.o(i.le_conn_update_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = le_conn_update_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_conn_disconnect (via Veneer)
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_conn_param (via Veneer)
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_conn_le_param_update (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_code)
+</UL>
+<P><STRONG><a name="[eb]"></a>llcc_rx_cmd_valid_handler_new</STRONG> (Thumb, 206 bytes, Stack size 24 bytes, llc_hci.o(i.llcc_rx_cmd_valid_handler_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = llcc_rx_cmd_valid_handler_new &rArr; llcc_tx_soft_reset_ack_cmd_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compute_checksum
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_retry_helper (via Veneer)
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_error2_cmd (via Veneer)
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rxcmd_valid_handler (via Veneer)
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_init (via Veneer)
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_soft_reset_ack_cmd_new
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rxcmd_valid_handler_new
+</UL>
+
+<P><STRONG><a name="[d]"></a>llcc_rxcmd_valid_handler_new</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, llc_hci.o(i.llcc_rxcmd_valid_handler_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = llcc_rxcmd_valid_handler_new &rArr; llcc_rx_cmd_valid_handler_new &rArr; llcc_tx_soft_reset_ack_cmd_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+</UL>
+<P><STRONG><a name="[10]"></a>llcc_rxdmal_done_handler_new</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, llc_hci.o(i.llcc_rxdmal_done_handler_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = llcc_rxdmal_done_handler_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rxdmal_done_handler (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".1)
+</UL>
+<P><STRONG><a name="[ee]"></a>llcc_tx_soft_reset_ack_cmd_new</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, llc_hci.o(i.llcc_tx_soft_reset_ack_cmd_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = llcc_tx_soft_reset_ack_cmd_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_cmd_crc (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_rx_cmd_valid_handler_new
+</UL>
+
+<P><STRONG><a name="[c]"></a>llcc_write_new</STRONG> (Thumb, 224 bytes, Stack size 40 bytes, llc_hci.o(i.llcc_write_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = llcc_write_new &rArr; compute_checksum
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compute_checksum
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_arch_irq_unlock_s
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_arch_irq_lock_s
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_wake_lock_inc (via Veneer)
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_wdog_tx_ena (via Veneer)
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_xfer_req_cmd (via Veneer)
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_tx_xfer_req2_cmd (via Veneer)
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llcc_dma_setup_tx (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".0)
+</UL>
+<P><STRONG><a name="[7]"></a>main</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, entry.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrepC (via Veneer)
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_uart_put_char
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[a2]"></a>mem_free</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, mem_manager.o(i.mem_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = mem_free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mem_slab_free (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push_free
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push_free
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response_free
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push_free
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response_free
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response_free
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle
+</UL>
+
+<P><STRONG><a name="[a3]"></a>mem_init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mem_manager.o(i.mem_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = mem_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mem_slab_init (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_ind_status_cb
+</UL>
+
+<P><STRONG><a name="[c1]"></a>mem_malloc</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mem_manager.o(i.mem_malloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = mem_malloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mem_slab_alloc (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_view_push
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_switch_backgroud_push
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_send_data_response
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_recv_data_push
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_init_response
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_auth_response
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_send_data_request
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_init_request
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_auth_request
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_response
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_unpack_base_push
+</UL>
+
+<P><STRONG><a name="[2b]"></a>new_k_delayed_work_cancel</STRONG> (Thumb, 182 bytes, Stack size 24 bytes, system_work_q.o(i.new_k_delayed_work_cancel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = new_k_delayed_work_cancel
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_arch_irq_unlock_s
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_arch_irq_lock_s
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_get (via Veneer)
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_and (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> system_work_q.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[33]"></a>smp_reset_new</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, bt_host_patch.o(i.smp_reset_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = smp_reset_new &rArr; atomic_set_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_set (via Veneer)
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_set_bit
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_delayed_work_cancel (via Veneer)
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_get (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[8c]"></a>str2bt_addr</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, bt_host_config_init.o(i.str2bt_addr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = str2bt_addr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen (via Veneer)
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_host_config_init
+</UL>
+
+<P><STRONG><a name="[e7]"></a>sys_pm_reboot</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, soc_pm.o(i.sys_pm_reboot))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = sys_pm_reboot &rArr; device_get_binding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;device_get_binding
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_arch_irq_lock_s
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_vs_read_done_new
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_tx_failure_new
+</UL>
+
+<P><STRONG><a name="[104]"></a>uart_acts_resume_device_from_suspend</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, uart_acts.o(i.uart_acts_resume_device_from_suspend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = uart_acts_resume_device_from_suspend
+</UL>
+<BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_reset_peripheral (via Veneer)
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_clock_peripheral_enable (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_device_ctrl
+</UL>
+
+<P><STRONG><a name="[107]"></a>uart_acts_suspend_device</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, uart_acts.o(i.uart_acts_suspend_device))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = uart_acts_suspend_device
+</UL>
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acts_clock_peripheral_disable (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_device_ctrl
+</UL>
+
+<P><STRONG><a name="[46]"></a>uart_console_init_new</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, uart_console.o(i.uart_console_init_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = uart_console_init_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_console_init (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> uart_console.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[2d]"></a>update_conn_param_new</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, bt_host_patch.o(i.update_conn_param_new))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = update_conn_param_new
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_delayed_work_submit_to_queue (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_patch.o(.patch_hw_func)
+</UL>
+<P><STRONG><a name="[94]"></a>wechat_advertise</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, wechat_service.o(i.wechat_advertise))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = wechat_advertise
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_le_adv_stop (via Veneer)
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_le_adv_start (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disconnected
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready
+</UL>
+
+<P><STRONG><a name="[b6]"></a>wechat_crc32</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, crc32.o(i.wechat_crc32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = wechat_crc32
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+</UL>
+
+<P><STRONG><a name="[93]"></a>wechat_init</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, wechat_service.o(i.wechat_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = wechat_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_service_register (via Veneer)
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_conn_cb_register (via Veneer)
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_le_oob_get_local (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready
+</UL>
+
+<P><STRONG><a name="[a1]"></a>wechat_send_data</STRONG> (Thumb, 96 bytes, Stack size 48 bytes, wechat_service.o(i.wechat_send_data))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = wechat_send_data &rArr; __send_and_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__send_and_wait
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;airsync_proto_handle
+</UL>
+
+<P><STRONG><a name="[92]"></a>wx_set_mac_address</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, wechat_protocol.o(i.wx_set_mac_address))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = wx_set_mac_address
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_ready
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[19]"></a>bt_ready</STRONG> (Thumb, 158 bytes, Stack size 32 bytes, main.o(.init.once.text."..\\src\\main.c".0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = bt_ready &rArr; wechat_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wx_set_mac_address
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_advertise
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_init (via Veneer)
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_le_oob_get_local (via Veneer)
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_release_wake_lock (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(i.app_main)
+</UL>
+<P><STRONG><a name="[9d]"></a>airsync_proto_handle</STRONG> (Thumb, 158 bytes, Stack size 40 bytes, main.o(i.airsync_proto_handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = airsync_proto_handle &rArr; data_produce_func_send &rArr; epb_pack_send_data_request &rArr; epb_set_message &rArr; epb_set_bytes &rArr; epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_send_data
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_sleep (via Veneer)
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_unlock (via Veneer)
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_lock (via Veneer)
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_produce_func_send
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main
+</UL>
+
+<P><STRONG><a name="[15]"></a>airsync_proto_ind_status_cb</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, main.o(i.airsync_proto_ind_status_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = airsync_proto_ind_status_cb &rArr; mem_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_unlock (via Veneer)
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_lock (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.init.once.text."..\\src\\main.c".0)
+</UL>
+<P><STRONG><a name="[16]"></a>airsync_proto_recv_cb</STRONG> (Thumb, 374 bytes, Stack size 48 bytes, main.o(i.airsync_proto_recv_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = airsync_proto_recv_cb &rArr; data_consume_func_rec &rArr; epb_unpack_init_response &rArr; epb_unpack_base_response &rArr; epb_get_string &rArr; epb_get_bytes &rArr; epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_unlock (via Veneer)
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_mutex_lock (via Veneer)
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_consume_func_rec
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.init.once.text."..\\src\\main.c".0)
+</UL>
+<P><STRONG><a name="[1e]"></a>__indicate_cb</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, wechat_service.o(i.__indicate_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __indicate_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(i.wechat_send_data)
+</UL>
+<P><STRONG><a name="[9a]"></a>__send_and_wait</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, wechat_service.o(i.__send_and_wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __send_and_wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_indicate (via Veneer)
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;k_sleep (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_send_data
+</UL>
+
+<P><STRONG><a name="[42]"></a>connected</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, wechat_service.o(i.connected))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = connected
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[43]"></a>disconnected</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, wechat_service.o(i.disconnected))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = disconnected &rArr; wechat_advertise
+</UL>
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_advertise
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[3b]"></a>ind_ch_ccc_cfg_changed</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, wechat_service.o(i.ind_ch_ccc_cfg_changed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ind_ch_ccc_cfg_changed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[41]"></a>rd_ch_read_cb</STRONG> (Thumb, 58 bytes, Stack size 48 bytes, wechat_service.o(i.rd_ch_read_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rd_ch_read_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_gatt_attr_read (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[3e]"></a>wr_ch_write_cb</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, wechat_service.o(i.wr_ch_write_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = wr_ch_write_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> wechat_service.o(.data)
+</UL>
+<P><STRONG><a name="[1f]"></a>uart_acts_irq_config_0</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, uart_acts.o(.init.once.text."..\\..\\..\\..\\drivers\\uart\\uart_acts.c".0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = uart_acts_irq_config_0
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_arch_irq_enable (via Veneer)
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_irq_priority_set (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> uart_acts.o(.constdata)
+</UL>
+<P><STRONG><a name="[49]"></a>uart_device_ctrl</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, uart_acts.o(i.uart_device_ctrl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = uart_device_ctrl &rArr; uart_acts_resume_device_from_suspend
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_suspend_device
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_acts_resume_device_from_suspend
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> uart_acts.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[66]"></a>llc_init_tx_command</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, llcc.o(.init.once.text."..\\..\\..\\..\\drivers\\bluetooth\\hci\\llcc.c".16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = llc_init_tx_command
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_wait_for_rx_message (via Veneer)
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_init_tx_message (via Veneer)
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;llc_hci_buf_free (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_llc_init_trim_up_load_new
+</UL>
+
+<P><STRONG><a name="[4d]"></a>_bt_host_config_init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".9))
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_config_init.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[13]"></a>sc_ccc_cfg_changed</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, bt_host_config_init.o(i.sc_ccc_cfg_changed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = sc_ccc_cfg_changed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bt_host_config_init.o(.init.once.text."..\\..\\..\\..\\subsys\\bluetooth\\host\\bt_host_config_init.c".8)
+</UL>
+<P><STRONG><a name="[a7]"></a>atomic_set_bit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bt_host_patch.o(i.atomic_set_bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = atomic_set_bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atomic_or (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;smp_reset_new
+</UL>
+
+<P><STRONG><a name="[ac]"></a>bt_addr_le_cmp</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, storage.o(i.bt_addr_le_cmp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bt_addr_le_cmp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys
+</UL>
+
+<P><STRONG><a name="[ae]"></a>bt_addr_le_copy</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, storage.o(i.bt_addr_le_copy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bt_addr_le_copy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_write
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;storage_read
+</UL>
+
+<P><STRONG><a name="[22]"></a>storage_clear</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, storage.o(i.storage_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = storage_clear &rArr; find_bt_keys &rArr; bt_addr_le_copy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> storage.o(.constdata)
+</UL>
+<P><STRONG><a name="[4e]"></a>storage_init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, storage.o(i.storage_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = storage_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_storage_register (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> storage.o(.devconfig.init)
+</UL>
+<P><STRONG><a name="[20]"></a>storage_read</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, storage.o(i.storage_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = storage_read &rArr; find_bt_keys &rArr; bt_addr_le_copy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_copy
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> storage.o(.constdata)
+</UL>
+<P><STRONG><a name="[21]"></a>storage_write</STRONG> (Thumb, 150 bytes, Stack size 40 bytes, storage.o(i.storage_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = storage_write &rArr; find_bt_keys &rArr; bt_addr_le_copy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bt_addr_le_copy
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_bt_keys
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> storage.o(.constdata)
+</UL>
+<P><STRONG><a name="[10c]"></a>crc_table</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, crc32.o(i.crc_table))
+<BR><BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wechat_crc32
+</UL>
+
+<P><STRONG><a name="[cd]"></a>epb_get_tag_value_offset</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, epb.o(i.epb_get_tag_value_offset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = epb_get_tag_value_offset &rArr; epb_get_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_varint32_bits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_has_tag
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_uint32
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+</UL>
+
+<P><STRONG><a name="[ce]"></a>epb_get_varint32_bits</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, epb.o(i.epb_get_varint32_bits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_get_varint32_bits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_uint32
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_bytes
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_get_tag_value_offset
+</UL>
+
+<P><STRONG><a name="[dd]"></a>epb_pack_tag</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, epb.o(i.epb_pack_tag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = epb_pack_tag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sizeof_tag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_uint32
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+</UL>
+
+<P><STRONG><a name="[df]"></a>epb_pack_varint32_bits</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, epb.o(i.epb_pack_varint32_bits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = epb_pack_varint32_bits
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_uint32
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_set_bytes
+</UL>
+
+<P><STRONG><a name="[de]"></a>sizeof_tag</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, epb.o(i.sizeof_tag))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_varint32_pack_size
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;epb_pack_tag
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

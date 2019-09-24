@@ -1,0 +1,79 @@
+; load region size_region
+LR_IROM 0x20001000 (40*1024)                   
+{
+  ; load address = execution address
+  ER_IROM 0x20001000              
+  {
+   *.o (RESET, +First)
+   *(InRoot$$Sections)
+   .ANY (+RO)
+  }
+  
+  RAM_RETENTION +0
+  {
+   .ANY (.ram_retention_code)
+   .ANY (.ram_retention_data)
+  }
+  
+  ; RW data
+  RW_IRAM_DEVICE_PRE_KERNEL_1 +0
+  {
+    *.o(.init_PRE_KERNEL_1*)
+  }
+  RW_IRAM_DEVICE_PRE_KERNEL_2 +0
+  {
+    *.o(.init_PRE_KERNEL_2*)
+  }
+  RW_IRAM_DEVICE_POST_KERNEL +0
+  {
+    *.o(.init_POST_KERNEL*)
+  }
+  RW_IRAM_DEVICE_APPLICATION +0
+  {
+    *.o(.init_APPLICATION*)
+  }
+	
+  RW_IRAM_DEVICE_BUSY +0
+  {
+    *.o(.device_BUSY)
+  }
+
+  RW_IRAM__net_buf_pool_area +0
+  {
+    *.o(._net_buf_pool.static.*)
+  }	
+  RW_IRAM__mem_pool_area +0
+  {
+    *.o(._k_mem_pool.static.*)
+  }	
+  RW_IRAM_SHELL_CMD_START +0
+  {
+    *.o(.shell_)
+  }	
+  
+  RW_IRAM_PATCH_HW_FUNC +0 96
+  {
+    *.o(.patch_hw_func)
+  }	
+  
+   RW_IRAM_PATCH_HW_CODE +0 96
+  {
+    *.o(.patch_hw_code)
+  }	
+
+  RW_IRAM2 +0
+  {
+   .ANY (+RW)
+  }
+	
+  RW_IRAM3 +0
+  {
+   .ANY (+ZI)
+  }
+	
+  RW_STACK +0 UNINIT
+  {
+    .ANY (STACK)
+  }
+}
+

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<partitions>
+	<partition>
+		<type>BOOT</type>
+		<name>fw0_boot</name>
+		<file>loader.bin</file>
+		<address>0x0</address>
+		<fw_id>0</fw_id>
+		<crc32>3906985582</crc32>
+	</partition>
+	<partition>
+		<type>BOOT</type>
+		<name>fw1_boot</name>
+		<file>loader.bin</file>
+		<address>0x1000</address>
+		<fw_id>1</fw_id>
+		<crc32>3906985582</crc32>
+	</partition>
+	<partition>
+		<type>SYSTEM</type>
+		<name>fw0_app</name>
+		<file>rcu.bin</file>
+		<address>0x10000</address>
+		<fw_id>0</fw_id>
+		<crc32>1559951836</crc32>
+	</partition>
+	<partition>
+		<type>SYSTEM</type>
+		<name>fw1_app</name>
+		<file>rcu.bin</file>
+		<address>0x30000</address>
+		<fw_id>1</fw_id>
+		<crc32>1559951836</crc32>
+	</partition>
+	<partitionsNum>4</partitionsNum>
+	<version>2.0.00.19052917</version>
+</partitions>

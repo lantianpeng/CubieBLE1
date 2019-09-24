@@ -1,0 +1,28 @@
+/* common config */
+#include "autoconf.h"
+
+#undef CONFIG_DEEPSLEEP
+#define CONFIG_DEEPSLEEP 0
+
+#undef CONFIG_BT_LLCC
+
+#define CONFIG_UART_0 1
+
+#define BOARD_PIN_CONFIG	\
+	{2, 3 | GPIO_CTL_SMIT | GPIO_CTL_PADDRV_LEVEL(3)},\
+	{3, 3 | GPIO_CTL_SMIT | GPIO_CTL_PADDRV_LEVEL(3)},\
+	{8, 13 },\
+	{9, 13 }, \
+	{10, 13 },\
+	{11, 13 }
+
+/* key reg val mapping to key val */
+#define MXKEYPAD_MASK 0xc6
+#define MXKEYPAD_MAPS \
+	{0x00020400, 0x00000000, 0x00000000, 	KEY_1},\
+	{0x00004000, 0x00020000, 0x00000000,	KEY_2},\
+	{0x00800000, 0x04000000, 0x00000000,  KEY_5},\
+	{0x00000000, 0x40800000, 0x00000000,  KEY_6},\
+	{0x00000000, 0x00000000, 0x00000200,  KEY_7},\
+	{0x00000000, 0x00000000, 0x00000080,  KEY_8},\
+	{0x00c00000, 0x44840000, 0x00000000,  KEY_9},

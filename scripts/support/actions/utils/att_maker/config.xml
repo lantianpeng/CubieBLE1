@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    test    : 结点名, 定义测试项
+    param   : 结点名, 定义测试参数, test的子节点
+    tid     : 定义测试项ID, test的专有属性；固定分配，与程序相关, 不可修改
+    name    : 定义名称的资源索引, 如: 测试项名称、参数名称等
+    desc    : 定义描述的资源索引, 如: 测试项描述、参数描述等
+    operate : 定义控件类型, param的专有属性
+      > edit    : 编辑框, 有range和type属性 
+      > single  : 下拉框，N选1(N>2), 有sub子结点
+      > checkbox: 二选一,checked属性可选，设置默认选中状态      
+    type    : 定义值类型, 编辑框(operate为edit)的专有属性
+      > string  : 字符串, 与range属性共存, mask属性可选
+      > dec     : 十进制数字, value为十进制形式，range指定值范围, 无需指定mask(默认0123456789-), 支持负数
+      > hex     : 十六进制，value为十六进制形式，range指定固定长度或值范围, 无需指定mask(默认0123456789ABCDEFabcdef)   
+    range   : 定义值范围, 格式min:max, range=5为固定长度(十进制形式)，range=4:8为范围值
+    value   : 定义默认值
+    mask    : 定义有效字符集, 编辑框(operate为edit)的可选属性
+    sub     : 定义下拉框列表项, 下拉框 (operate为single)的专有子结点
+      > name属性定义一个下拉项, 需有value属性定义下拉项的值
+      > range属性定义一组(>1)下拉项集合, 无需value属性, 各项的值由range指定 
+      > select设置默认选中项
+    index   : 定义parm顺序，指定则以编辑顺序为准；也应用于config.txt
+    show    : 在编辑工具中是否显示此参数，未配置或值为true则显示
+    version : config节点新加属性, 表明config.xml的版本
+      > v160301: param节点增加index和show属性
+-->
+
+<config version="160301" name = "/">
+
+  <!-- 量产测试: 14 -->
+  <test tid = "14" name = "S1600" desc = "S1601">
+    <!-- Firmware Upgrade or not-->
+    <param name = "S1500" operate = "checkbox" checked="true" desc = "S1501" />
+
+    <!-- Modify BT ADDR or not-->
+    <param name = "S300" operate = "checkbox" checked="true" />
+
+    <!-- BT ADDR High 3B-->
+    <param name = "S301"  value = "f44efd" operate = "edit" range = "6" desc = "S302" type = "hex"/>
+    <!-- BT ADDR Low 3B start -->
+    <param name = "S303"  value = "000001" operate = "edit" range = "6" desc = "S304" type = "hex" focus = "true" />
+    <!-- BT ADDR Low 3B end -->
+    <param name = "S322"  value = "ffffff" operate = "edit" range = "6" desc = "S304" type = "hex"/>
+    <!-- BT ADDR generate mode -->
+    <param name = "S305"  operate = "single" desc = "S306">
+      <sub name="S307" value="0" select="true"/>
+      <sub name="S308" value="1" />
+    </param>
+
+    <!-- BT Test or not-->
+    <param name = "S1300" operate = "checkbox" checked="true" />
+    <!-- Efuse Write Mode-->
+    <param name = "S1401" operate = "single" desc = "S1402">
+      <sub name="S1403" value="0" />
+      <sub name="S1404" value="1" select="true"/>
+    </param>
+    <!-- RSSI MIN -->
+    <param name = "S1708" value = "-50" operate = "edit" range = "-60:-40" desc = "S1709" type = "dec"/>
+
+  </test> 
+
+       
+  <L804 desc="Chinese">
+    <S300 value="修改蓝牙地址" />
+    <S301 value="  蓝牙地址高3字节" />
+    <S302 value="  蓝牙地址高3字节，必须是3字节的十六进制数字" />    
+    <S303 value="  蓝牙地址低3字节-起始值" />
+    <S304 value="  修改蓝牙地址低3字节数据，必须是3字节的十六进制数字" />
+    <S305 value="  蓝牙地址生成方式" />
+    <S306 value="0:累加 1:随机" />
+    <S307 value="累加" />
+    <S308 value="随机"/>
+    <S309 value="固定"/>
+    <S320 value="人工输入"/>
+    <S321 value="用户自定义"/>
+    <S322 value="  蓝牙地址低3字节-结束值" />
+
+    <S1300 value="蓝牙频偏测试" />
+    <S1401 value="  频偏数值写入模式"/>
+    <S1402 value="对于MCP IC,建议选择先写入efuse,再写入norflash。非MCP IC建议选择写入efuse"/>
+    <S1403 value="不写入"/>
+    <S1404 value="只写入efuse"/>
+    <S1405 value="先写入efuse，后写入norflash"/>
+
+    <S1500 value="固件升级"/> 
+    <S1501 value="该测试项必须作为固件升级测试的第一项"/>  
+    
+    <S1600 value="固件升级测试"/>  
+    <S1601 value="该测试项为固件升级测试，包括固件升级和其他测试项"/>   
+
+    <S1708 value="  RSSI最小值"/>
+    <S1709 value="阈值范围-60到-40，该值为批量统计值，表示合法的最小值"/>  
+  </L804>
+  
+  <L409 desc="English (United States)">
+    <S300 value="Modify BT ADDR" />
+    <S301 value="  High 3bytes" />
+    <S302 value="  3 high bytes of BT ADDR in hexadecimal format" />    
+    <S303 value="  Low 3bytes(start)" />
+    <S304 value="  3 low bytes of BT ADDR in hexadecimal format" />
+    <S305 value="  Generation Mode" />
+    <S306 value="0:cumulative 1:random" />
+    <S307 value="cumulative" />
+    <S308 value="random"/>
+    <S309 value="constant"/>
+    <S320 value="Manual"/>
+    <S321 value="Customized"/>
+    <S322 value="  Low 3bytes(end)" />
+
+    <S1300 value="BLE Frequece Offset Test" />
+
+    <S1401 value="  Write record mode"/>
+    <S1402 value="For MCP IC, it's advised to write efuse and norflash. For other ICs, choose write efuse only"/>
+    <S1403 value="Not to write"/>
+    <S1404 value="Only write efuse"/>
+    <S1405 value="Write efuse first and then write norflash"/>
+
+    <S1500 value="Firmware upgrade"/> 
+    <S1501 value="This test issue must be the 1st test in firmware upgrade test issue"/>  
+    
+    <S1600 value="Firmware upgrade testing"/>  
+    <S1601 value="For firmware upgrade, including firmware upgrade and other test isssue"/>   
+
+    <S1708 value="  MIN RSSI"/>                                                
+    <S1709 value="Threshold range from -60 to -40.It's statistical value and stands for legal MIN value"/> 
+  </L409>
+  
+  <L404 desc="Chinese (Taiwan)">
+    <S300 value="修改藍牙地址" />
+    <S301 value="  藍牙地址高3字節" />
+    <S302 value="  藍牙地址高3字節，必須為3字節十六進制數字" />    
+    <S303 value="  藍牙地址低3字節-起始值" />
+    <S304 value="  修改藍牙地址低3字節數據，必須為3字節十六進制數字" />
+    <S305 value="  藍牙地址產生方式" />
+    <S306 value="0:累加 1:隨機" />
+    <S307 value="累加" />
+    <S308 value="隨機"/>
+    <S309 value="固定"/>
+    <S320 value="手動輸入"/>
+    <S321 value="用戶自訂"/>
+    <S322 value="  藍牙地址低3字節-結束值" />
+
+    <S1300 value="藍牙頻偏測試" />
+    
+    <S1401 value="  頻偏數值寫入模式"/>
+    <S1402 value="對於MCP IC，建議選擇先寫入efuse，再寫入norflash。非MCP IC建議選擇寫入efuse"/>
+    <S1403 value="不寫入"/>
+    <S1404 value="只寫入efuse"/>
+    <S1405 value="先寫入efuse，後寫入norflash"/> 
+
+    <S1500 value="固件升級"/> 
+    <S1501 value="該測試項必須作為固件升級測試的第一項"/>  
+    
+    <S1600 value="固件升級測試"/>  
+    <S1601 value="該測試項為固件升級測試，包括固件升級和其他測試項"/>    
+
+    <S1708 value="  RSSI最小值"/>
+    <S1709 value="閥值範圍-60到-40，該值為批量統計值，表示合法的最小值"/>  
+  </L404>
+</config>

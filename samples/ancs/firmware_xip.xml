@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<firmware>
+	<descirption>Firmware layout for ZS110A</descirption>
+	<disk_size>0x80000</disk_size>
+
+	<partitions>
+		<partition>
+			<type>BOOT</type>
+			<name>fw0_boot</name>
+			<file>loader.bin</file>
+			<address>0x0</address>
+			<enable_crc>true</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_ota>true</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>true</enable_dfu>
+			<fw_id>0</fw_id>
+		</partition>
+
+		<partition>
+			<type>BOOT</type>
+			<name>fw1_boot</name>
+			<file>loader.bin</file>
+			<address>0x1000</address>
+			<enable_crc>true</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_ota>true</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>false</enable_dfu>
+			<fw_id>1</fw_id>
+		</partition>
+
+		<partition>
+			<type>SYSTEM</type>
+			<name>fw0_app</name>
+			<file>ancs.bin</file>
+			<address>0x10000</address>
+			<enable_crc>true</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_boot_check>false</enable_boot_check>
+			<enable_ota>true</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>true</enable_dfu>
+			<fw_id>0</fw_id>
+		</partition>
+
+		<partition>
+			<type>SYSTEM</type>
+			<name>fw1_app</name>
+			<file>ancs.bin</file>
+			<address>0x30000</address>
+			<enable_crc>true</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_boot_check>false</enable_boot_check>
+			<enable_ota>true</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>true</enable_dfu>
+			<fw_id>1</fw_id>
+		</partition>
+
+		<partition>
+			<type>DTM</type>
+			<name>dtm</name>
+			<file>rf_test.bin</file>
+			<address>0x50000</address>
+			<enable_crc>true</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_boot_check>false</enable_boot_check>
+			<enable_ota>false</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>true</enable_dfu>
+			<fw_id>255</fw_id>
+		</partition>
+
+		<partition>
+			<type>DATA</type>
+			<name>nv_factory</name>
+			<file>nvram.bin</file>
+			<address>0x70000</address>
+			<size>0x10000</size>
+			<enable_crc>false</enable_crc>
+			<enable_randomize>false</enable_randomize>
+			<enable_ota>false</enable_ota>
+			<enable_raw>true</enable_raw>
+			<enable_dfu>true</enable_dfu>
+			<fw_id>255</fw_id>
+		</partition>
+	</partitions>
+</firmware>

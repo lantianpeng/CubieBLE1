@@ -1,0 +1,1723 @@
+L 1 "..\src\wechat\MmBp_Embedded_1.0.4\crc32\crc32.c"
+L 1 "..\src\include\autoconf_app.h" 1
+N/* common config */
+N#include "autoconf.h"
+L 1 "..\..\..\..\include\generated\autoconf.h" 1
+N/*
+N *
+N * Automatically generated file; DO NOT EDIT.
+N * Zephyr Kernel Configuration
+N *
+N */
+N
+N/* shell */
+N#define CONFIG_KERNEL_SHELL 1
+N
+N#define CONFIG_CONSOLE_SHELL 1
+N#define CONFIG_CONSOLE_SHELL_MAX_CMD_QUEUED 3
+N#define CONFIG_CONSOLE_SHELL_STACKSIZE 1024
+N#define CONFIG_UART_CONSOLE_INIT_PRIORITY 60
+N
+N/* printk & sys_log */
+N#define CONFIG_PRINTK 1
+N#define CONFIG_SYS_LOG 1
+N#define CONFIG_SYS_LOG_SHOW_TAGS 0
+N#define CONFIG_SYS_LOG_DEFAULT_LEVEL SYS_LOG_LEVEL_INFO
+N#define CONFIG_SYS_LOG_OVERRIDE_LEVEL 0
+N#define CONFIG_UART_CONSOLE_ON_DEV_NAME "UART_0"
+N
+N/* workqueue */
+N#define CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE 1024
+N
+N/* stack */
+N#define CONFIG_MAIN_STACK_SIZE 1024
+N#define CONFIG_IDLE_STACK_SIZE 256
+N#define CONFIG_ISR_STACK_SIZE 640
+N
+N/* init priority level */
+N#define CONFIG_KERNEL_INIT_PRIORITY_OBJECTS 30
+N#define CONFIG_KERNEL_INIT_PRIORITY_DEFAULT 40
+N#define CONFIG_KERNEL_INIT_PRIORITY_DEVICE 50
+N
+N/* async msg */
+N#define CONFIG_NUM_PIPE_ASYNC_MSGS 10
+N#define CONFIG_NUM_MBOX_ASYNC_MSGS 10
+N
+N/* dma */
+N#define CONFIG_DMA_ACTS_DEVICE_INIT_PRIORITY 40
+N
+N#define CONFIG_DMA_0_NAME "DMA_0"
+N#define CONFIG_DMA_0_IRQ_PRI 3
+N
+N/* rtc */
+N#define CONFIG_RTC_0_NAME "RTC_0"
+N#define CONFIG_RTC_0_IRQ_PRI 0
+N
+N/* pwm */
+N#define CONFIG_PWM_ACTS_DEV_NAME "PWM_0"
+N
+N/* spi */
+N#define CONFIG_SPI_INIT_PRIORITY 70
+N
+N#define CONFIG_SPI_1_NAME "SPI_1"
+N#define CONFIG_SPI_1_IRQ_PRI 0
+N#define CONFIG_SPI_1_DEFAULT_CFG 0x80
+N#define CONFIG_SPI_1_DEFAULT_BAUD_RATE 500000
+N
+N#define CONFIG_SPI_2_NAME "SPI_2"
+N#define CONFIG_SPI_2_IRQ_PRI 0
+N#define CONFIG_SPI_2_DEFAULT_CFG 0x80
+N#define CONFIG_SPI_2_DEFAULT_BAUD_RATE 500000
+N
+N/* spinor */
+N#define CONFIG_XSPI_NOR_ACTS_DEV_NAME "xspi_nor"
+N#define CONFIG_XSPI_NOR_ACTS_DEV_INIT_PRIORITY 45
+N
+N/* nvram */
+N#define CONFIG_NVRAM_CONFIG 1
+N#define CONFIG_NVRAM_ACTS_DRV_NAME "NVRAM"
+N#define CONFIG_NVRAM_STORAGE_DEV_NAME CONFIG_XSPI_NOR_ACTS_DEV_NAME
+N#define CONFIG_NVRAM_CONFIG_INIT_PRIORITY 48
+N#define CONFIG_NVRAM_FACTORY_REGION_BASE_ADDR 0x70000
+N#define CONFIG_NVRAM_FACTORY_REGION_SIZE 0x2000
+N#define CONFIG_NVRAM_WRITE_REGION_BASE_ADDR 0x72000
+N#define CONFIG_NVRAM_WRITE_REGION_SIZE 0x4000
+N
+N/* adc */
+N#define CONFIG_ADC_INIT_PRIORITY 80
+N#define CONFIG_ADC_0_NAME "ADC_0"
+N#define CONFIG_ADC_0_IRQ_PRI 2
+N
+N/* i2c */
+N#define CONFIG_I2C_INIT_PRIORITY 60
+N
+N#define CONFIG_I2C_0_NAME "I2C_0"
+N#define CONFIG_I2C_0_DEFAULT_CFG 0x0
+N#define CONFIG_I2C_0_IRQ_PRI 0
+N
+N#define CONFIG_I2C_1_NAME "I2C_1"
+N#define CONFIG_I2C_1_DEFAULT_CFG 0x0
+N#define CONFIG_I2C_1_IRQ_PRI 0
+N
+N/* gpio */
+N#define CONFIG_GPIO_ACTS_DRV_NAME "GPIO"
+N#define CONFIG_GPIO_ACTS_INIT_PRIORITY 20
+N
+N/* input */
+N#define CONFIG_SYS_LOG_INPUT_DEV_LEVEL 0
+N
+N/* inpu-matrix key */
+N#define CONFIG_INPUT_DEV_ACTS_MARTRIX_KEYPAD_NAME "MXKEYPAD"
+N#define CONFIG_INPUT_DEV_ACTS_MARTRIX_KEYPAD_NAME_IRQ_PRI 0
+N
+N/* input-adckey */
+N#define CONFIG_INPUT_DEV_ACTS_ADCKEY_NAME "ADCKEY"
+N
+N/* input-ir */
+N#define CONFIG_IRC_ACTS_DEV_NAME "IRC" 
+N
+N#define CONFIG_SW_IRC_ACTS_DEV_NAME "SWIRC"
+N
+N/* audio_in */
+N#define CONFIG_AUDIO_IN_ACTS_NAME "AUDIOIN"
+N
+N/* audio_out */
+N#define CONFIG_AUDIO_OUT_ACTS_NAME "AUDIOOUT"
+N
+N/* watchdog */
+N#define CONFIG_WDG_ACTS_DEV_NAME "WATCHDOG"
+N
+N/* bt */
+N/* host stack Configuration*/
+N#define CONFIG_BT_MAX_CONN 4
+N#define CONFIG_BT_MAX_PAIRED 2
+N
+N/* host stack buffer config */
+N#define CONFIG_BT_HCI_CMD_COUNT 2
+N#define CONFIG_BT_RX_BUF_COUNT 4
+N#define CONFIG_BT_RX_BUF_LEN 76
+N#define CONFIG_BT_L2CAP_TX_BUF_COUNT 3
+N#define CONFIG_BT_L2CAP_TX_MTU 65
+N#define CONFIG_BT_CONN_TX_MAX 7
+N
+N/* bt thread stack size*/
+N#define CONFIG_BT_HCI_TX_STACK_SIZE 256
+N#define CONFIG_BT_RX_STACK_SIZE 1024
+N
+N/* att */
+N#define CONFIG_BT_ATT_PREPARE_COUNT 0
+N#define CONFIG_BT_ATT_TX_MAX 2
+N
+N/* gap name */
+N#define CONFIG_BT_DEVICE_NAME "Zephyr"
+N#define CONFIG_BT_DEVICE_APPEARANCE 0
+N
+N/* private addr */
+N#define CONFIG_BT_PRIVACY 0
+N#define CONFIG_BT_RPA_TIMEOUT 900
+N
+N#define CONFIG_BT_DEBUG_LOG 1
+N#define CONFIG_CCC_STORE_MAX 10
+N
+N/* deepsleep */
+N#define CONFIG_DEEPSLEEP 0
+N#define CONFIG_DEEPSLEEP_TICK_THRESH 10
+N#define CONFIG_DEEPSLEEP_SWITCH_32M 1
+N
+N/* ota */
+N#define CONFIG_OTA_WITH_APP 1
+L 3 "..\src\include\autoconf_app.h" 2
+N
+N/* application config */
+N/* NVRAM */
+N#undef CONFIG_NVRAM_CONFIG
+N#define CONFIG_NVRAM_CONFIG 0
+N
+N/* BT */
+N#undef CONFIG_BT_DEVICE_NAME
+N#undef CONFIG_BT_MAX_CONN
+N#undef CONFIG_BT_MAX_PAIRED
+N#undef CONFIG_BT_RX_BUF_COUNT
+N#undef CONFIG_BT_L2CAP_TX_BUF_COUNT
+N
+N#define CONFIG_BT_DEVICE_NAME "110X Airsync"
+N#define CONFIG_BT_MAX_CONN 1
+N#define CONFIG_BT_MAX_PAIRED 1
+N#define CONFIG_BT_RX_BUF_COUNT 3
+N#define CONFIG_BT_L2CAP_TX_BUF_COUNT 4
+N
+N/* STACK 
+N#undef CONFIG_IDLE_STACK_SIZE
+N#undef CONFIG_BT_RX_STACK_SIZE
+N#undef CONFIG_CONSOLE_SHELL_STACKSIZE
+N
+N#define CONFIG_IDLE_STACK_SIZE (256+256)
+N#define CONFIG_BT_RX_STACK_SIZE (1280 - 300)
+N#define CONFIG_CONSOLE_SHELL_STACKSIZE 1024*/
+N
+N/* DEEPSLEEP
+N#undef CONFIG_DEEPSLEEP
+N#define CONFIG_DEEPSLEEP 0 */
+N
+N/* BOARD */
+N#define CONFIG_UART_0 1
+N#define BOARD_PIN_CONFIG	\
+N	{2, 3 | GPIO_CTL_SMIT | GPIO_CTL_PADDRV_LEVEL(3)},\
+N	{3, 3 | GPIO_CTL_SMIT | GPIO_CTL_PADDRV_LEVEL(3)}
+X#define BOARD_PIN_CONFIG		{2, 3 | GPIO_CTL_SMIT | GPIO_CTL_PADDRV_LEVEL(3)},	{3, 3 | GPIO_CTL_SMIT | GPIO_CTL_PADDRV_LEVEL(3)}
+L 1 "..\src\wechat\MmBp_Embedded_1.0.4\crc32\crc32.c" 2
+N//  crc32.c
+N//  WeChat Embedded
+N//
+N//  Created by harlliu on 14-03-03.
+N//  Copyright 2014 Tencent. All rights reserved.
+N//
+N
+N#include <stdio.h>
+L 1 "F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h" 1
+N/* stdio.h: ANSI 'C' (X3J11 Oct 88) library header, section 4.9 */
+N/* Copyright (C) Codemist Ltd., 1988-1993                       */
+N/* Copyright 1991-1998 ARM Limited. All rights reserved.        */
+N
+N/*
+N * RCS $Revision$
+N * Checkin $Date$
+N * Revising $Author: sdouglas $
+N */
+N
+N/*
+N * stdio.h declares two types, several macros, and many functions for
+N * performing input and output. For a discussion on Streams and Files
+N * refer to sections 4.9.2 and 4.9.3 in the above ANSI draft, or to a
+N * modern textbook on C.
+N */
+N
+N#ifndef __stdio_h
+N#define __stdio_h
+N#define __ARMCLIB_VERSION 5060034
+N
+N/*
+N * Depending on compiler version __int64 or __INT64_TYPE__ should be defined.
+N */
+N#ifndef __int64
+N  #ifdef __INT64_TYPE__
+S    #define __int64 __INT64_TYPE__
+N  #endif
+N  /* On some architectures neither of these may be defined - if so, fall
+N     through and error out if used. */
+N#endif
+N
+N
+N#define _ARMABI __declspec(__nothrow)
+N
+N  #ifndef __STDIO_DECLS
+N  #define __STDIO_DECLS
+N
+N    #undef __CLIBNS
+N    #ifdef __cplusplus
+S      namespace std {
+S      #define __CLIBNS ::std::
+S        extern "C" {
+N    #else /* ndef __cplusplus */
+N      #define __CLIBNS
+N    #endif /* ndef __cplusplus */
+N
+N#if defined(__cplusplus) || !defined(__STRICT_ANSI__) || !defined(__size_t)
+X#if 0L || !0L || !0L
+N /* always defined in C++ and non-strict C for consistency of debug info */
+N  #if __sizeof_ptr == 8
+X  #if 4 == 8
+S    typedef unsigned long size_t;   /* see <stddef.h> */
+N  #else
+N    typedef unsigned int size_t;   /* see <stddef.h> */
+N  #endif
+N  #if !defined(__cplusplus) && defined(__STRICT_ANSI__)
+X  #if !0L && 0L
+S    #define __size_t 1
+N  #endif
+N#endif
+N
+N#undef NULL
+N#define NULL 0                   /* see <stddef.h> */
+N
+N/* ANSI forbids va_list to be defined here */
+N/* keep in step with <stdarg.h> and <wchar.h> */
+N#if !defined(__va_list) && (defined(__cplusplus) || !defined(__STRICT_ANSI__) || !defined(__va_list_defined))
+X#if !0L && (0L || !0L || !0L)
+N/* always defined in C++ and non-strict C for consistency of debug info */
+N  #ifdef __clang__
+S    typedef __builtin_va_list __va_list;
+N  #else
+N    typedef struct __va_list __va_list;
+N  #endif
+N  #if !defined(__cplusplus) && defined(__STRICT_ANSI__)
+X  #if !0L && 0L
+S    #define __va_list_defined 1
+N  #endif
+N#endif
+N
+N   /*
+N    * If the compiler supports signalling nans as per N965 then it
+N    * will define __SUPPORT_SNAN__, in which case a user may define
+N    * _WANT_SNAN in order to obtain compliant versions of the printf
+N    * and scanf families of functions
+N    */
+N#if defined(__SUPPORT_SNAN__) && defined(_WANT_SNAN)
+X#if 0L && 0L
+S#pragma import(__use_snan)
+N#endif
+N
+Ntypedef struct __fpos_t_struct {
+N    unsigned __int64 __pos;
+N    /*
+N     * this structure is equivalent to an mbstate_t, but we're not
+N     * allowed to actually define the type name `mbstate_t' within
+N     * stdio.h
+N     */
+N    struct {
+N        unsigned int __state1, __state2;
+N    } __mbstate;
+N} fpos_t;
+N   /*
+N    * fpos_t is an object capable of recording all information needed to
+N    * specify uniquely every position within a file.
+N    */
+N
+N#define _SYS_OPEN 16
+N   /* _SYS_OPEN defines a limit on the number of open files that is imposed
+N    * by this C library
+N    */
+N
+Ntypedef struct __FILE FILE;
+N   /*
+N    * FILE is an object capable of recording all information needed to control
+N    * a stream, such as its file position indicator, a pointer to its
+N    * associated buffer, an error indicator that records whether a read/write
+N    * error has occurred and an end-of-file indicator that records whether the
+N    * end-of-file has been reached.
+N    * Its structure is not made known to library clients.
+N    */
+N
+N#if defined(__STRICT_ANSI__) && !__FILE_INCOMPLETE
+X#if 0L && !__FILE_INCOMPLETE
+Sstruct __FILE {
+S    union {
+S        long __FILE_alignment;
+S#ifdef __TARGET_ARCH_AARCH64
+S        char __FILE_size[136];
+S#else /* __TARGET_ARCH_AARCH64 */
+S        char __FILE_size[84];
+S#endif /* __TARGET_ARCH_AARCH64 */
+S    } __FILE_opaque;
+S};
+S    /*
+S     * FILE must be an object type (C99 - 7.19.1) and an object type fully
+S     * describes an object [including its static size] (C99 - 6.2.5).
+S     * This definition is a placeholder which matches the struct __FILE in
+S     * size and alignment as used internally by libc.
+S     */
+N#endif
+N
+N
+Nextern FILE __stdin, __stdout, __stderr;
+Nextern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
+N
+N#if _AEABI_PORTABILITY_LEVEL != 0 || (!defined _AEABI_PORTABILITY_LEVEL && __DEFAULT_AEABI_PORTABILITY_LEVEL != 0)
+X#if _AEABI_PORTABILITY_LEVEL != 0 || (!0L && __DEFAULT_AEABI_PORTABILITY_LEVEL != 0)
+S#define stdin  (__CLIBNS __aeabi_stdin)
+S   /* pointer to a FILE object associated with standard input stream */
+S#define stdout (__CLIBNS __aeabi_stdout)
+S   /* pointer to a FILE object associated with standard output stream */
+S#define stderr (__CLIBNS __aeabi_stderr)
+S   /* pointer to a FILE object associated with standard error stream */
+Sextern const int __aeabi_IOFBF;
+S#define _IOFBF (__CLIBNS __aeabi_IOFBF)
+Sextern const int __aeabi_IONBF;
+S#define _IONBF (__CLIBNS __aeabi_IONBF)
+Sextern const int __aeabi_IOLBF;
+S#define _IOLBF (__CLIBNS __aeabi_IOLBF)
+Sextern const int __aeabi_BUFSIZ;
+S#define BUFSIZ (__CLIBNS __aeabi_BUFSIZ)
+Sextern const int __aeabi_FOPEN_MAX;
+S#define FOPEN_MAX (__CLIBNS __aeabi_FOPEN_MAX)
+Sextern const int __aeabi_TMP_MAX;
+S#define TMP_MAX (__CLIBNS __aeabi_TMP_MAX)
+Sextern const int __aeabi_FILENAME_MAX;
+S#define FILENAME_MAX (__CLIBNS __aeabi_FILENAME_MAX)
+Sextern const int __aeabi_L_tmpnam;
+S#define L_tmpnam (__CLIBNS __aeabi_L_tmpnam)
+N#else
+N#define stdin  (&__CLIBNS __stdin)
+N   /* pointer to a FILE object associated with standard input stream */
+N#define stdout (&__CLIBNS __stdout)
+N   /* pointer to a FILE object associated with standard output stream */
+N#define stderr (&__CLIBNS __stderr)
+N   /* pointer to a FILE object associated with standard error stream */
+N
+N#define _IOFBF           0x100 /* fully buffered IO */
+N#define _IOLBF           0x200 /* line buffered IO */
+N#define _IONBF           0x400 /* unbuffered IO */
+N
+N    /* Various default file IO buffer sizes */
+N#define BUFSIZ       (512)  /* system buffer size (as used by setbuf) */
+N
+N#define FOPEN_MAX _SYS_OPEN
+N   /*
+N    * an integral constant expression that is the minimum number of files that
+N    * this implementation guarantees can be open simultaneously.
+N    */
+N
+N#define FILENAME_MAX 256
+N   /*
+N    * an integral constant expression that is the size of an array of char
+N    * large enough to hold the longest filename string
+N    */
+N#define L_tmpnam FILENAME_MAX
+N   /*
+N    * an integral constant expression that is the size of an array of char
+N    * large enough to hold a temporary file name string generated by the
+N    * tmpnam function.
+N    */
+N#define TMP_MAX 256
+N   /*
+N    * an integral constant expression that is the minimum number of unique
+N    * file names that shall be generated by the tmpnam function.
+N    */
+N
+N#endif
+N
+N#define EOF      (-1)
+N   /*
+N    * negative integral constant, indicates end-of-file, that is, no more input
+N    * from a stream.
+N    */
+N
+N#define SEEK_SET 0 /* start of stream (see fseek) */
+N#define SEEK_CUR 1 /* current position in stream (see fseek) */
+N#define SEEK_END 2 /* end of stream (see fseek) */
+N
+N    /*
+N     * _IOBIN is the flag passed to _sys_write to denote a binary
+N     * file.
+N     */
+N#define _IOBIN            0x04     /* binary stream */
+N
+N#define __STDIN_BUFSIZ  (64)  /* default stdin buffer size */
+N#define __STDOUT_BUFSIZ (64)  /* default stdout buffer size */
+N#define __STDERR_BUFSIZ (16)  /* default stderr buffer size */
+N
+Nextern _ARMABI int remove(const char * /*filename*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int remove(const char *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * causes the file whose name is the string pointed to by filename to be
+N    * removed. Subsequent attempts to open the file will fail, unless it is
+N    * created anew. If the file is open, the behaviour of the remove function
+N    * is implementation-defined.
+N    * Returns: zero if the operation succeeds, nonzero if it fails.
+N    */
+Nextern _ARMABI int rename(const char * /*old*/, const char * /*new*/) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int rename(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * causes the file whose name is the string pointed to by old to be
+N    * henceforth known by the name given by the string pointed to by new. The
+N    * file named old is effectively removed. If a file named by the string
+N    * pointed to by new exists prior to the call of the rename function, the
+N    * behaviour is implementation-defined.
+N    * Returns: zero if the operation succeeds, nonzero if it fails, in which
+N    *          case if the file existed previously it is still known by its
+N    *          original name.
+N    */
+Nextern _ARMABI FILE *tmpfile(void);
+Xextern __declspec(__nothrow) FILE *tmpfile(void);
+N   /*
+N    * creates a temporary binary file that will be automatically removed when
+N    * it is closed or at program termination. The file is opened for update.
+N    * Returns: a pointer to the stream of the file that it created. If the file
+N    *          cannot be created, a null pointer is returned.
+N    */
+Nextern _ARMABI char *tmpnam(char * /*s*/);
+Xextern __declspec(__nothrow) char *tmpnam(char *  );
+N   /*
+N    * generates a string that is not the same as the name of an existing file.
+N    * The tmpnam function generates a different string each time it is called,
+N    * up to TMP_MAX times. If it is called more than TMP_MAX times, the
+N    * behaviour is implementation-defined.
+N    * Returns: If the argument is a null pointer, the tmpnam function leaves
+N    *          its result in an internal static object and returns a pointer to
+N    *          that object. Subsequent calls to the tmpnam function may modify
+N    *          the same object. if the argument is not a null pointer, it is
+N    *          assumed to point to an array of at least L_tmpnam characters;
+N    *          the tmpnam function writes its result in that array and returns
+N    *          the argument as its value.
+N    */
+N
+Nextern _ARMABI int fclose(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int fclose(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * causes the stream pointed to by stream to be flushed and the associated
+N    * file to be closed. Any unwritten buffered data for the stream are
+N    * delivered to the host environment to be written to the file; any unread
+N    * buffered data are discarded. The stream is disassociated from the file.
+N    * If the associated buffer was automatically allocated, it is deallocated.
+N    * Returns: zero if the stream was succesfully closed, or nonzero if any
+N    *          errors were detected or if the stream was already closed.
+N    */
+Nextern _ARMABI int fflush(FILE * /*stream*/);
+Xextern __declspec(__nothrow) int fflush(FILE *  );
+N   /*
+N    * If the stream points to an output or update stream in which the most
+N    * recent operation was output, the fflush function causes any unwritten
+N    * data for that stream to be delivered to the host environment to be
+N    * written to the file. If the stream points to an input or update stream,
+N    * the fflush function undoes the effect of any preceding ungetc operation
+N    * on the stream.
+N    * Returns: nonzero if a write error occurs.
+N    */
+Nextern _ARMABI FILE *fopen(const char * __restrict /*filename*/,
+Xextern __declspec(__nothrow) FILE *fopen(const char * __restrict  ,
+N                           const char * __restrict /*mode*/) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * opens the file whose name is the string pointed to by filename, and
+N    * associates a stream with it.
+N    * The argument mode points to a string beginning with one of the following
+N    * sequences:
+N    * "r"         open text file for reading
+N    * "w"         create text file for writing, or truncate to zero length
+N    * "a"         append; open text file or create for writing at eof
+N    * "rb"        open binary file for reading
+N    * "wb"        create binary file for writing, or truncate to zero length
+N    * "ab"        append; open binary file or create for writing at eof
+N    * "r+"        open text file for update (reading and writing)
+N    * "w+"        create text file for update, or truncate to zero length
+N    * "a+"        append; open text file or create for update, writing at eof
+N    * "r+b"/"rb+" open binary file for update (reading and writing)
+N    * "w+b"/"wb+" create binary file for update, or truncate to zero length
+N    * "a+b"/"ab+" append; open binary file or create for update, writing at eof
+N    *
+N    * Opening a file with read mode ('r' as the first character in the mode
+N    * argument) fails if the file does not exist or cannot be read.
+N    * Opening a file with append mode ('a' as the first character in the mode
+N    * argument) causes all subsequent writes to be forced to the current end of
+N    * file, regardless of intervening calls to the fseek function. In some
+N    * implementations, opening a binary file with append mode ('b' as the
+N    * second or third character in the mode argument) may initially position
+N    * the file position indicator beyond the last data written, because of the
+N    * NUL padding.
+N    * When a file is opened with update mode ('+' as the second or third
+N    * character in the mode argument), both input and output may be performed
+N    * on the associated stream. However, output may not be directly followed
+N    * by input without an intervening call to the fflush fuction or to a file
+N    * positioning function (fseek, fsetpos, or rewind), and input be not be
+N    * directly followed by output without an intervening call to the fflush
+N    * fuction or to a file positioning function, unless the input operation
+N    * encounters end-of-file. Opening a file with update mode may open or
+N    * create a binary stream in some implementations. When opened, a stream
+N    * is fully buffered if and only if it does not refer to an interactive
+N    * device. The error and end-of-file indicators for the stream are
+N    * cleared.
+N    * Returns: a pointer to the object controlling the stream. If the open
+N    *          operation fails, fopen returns a null pointer.
+N    */
+Nextern _ARMABI FILE *freopen(const char * __restrict /*filename*/,
+Xextern __declspec(__nothrow) FILE *freopen(const char * __restrict  ,
+N                    const char * __restrict /*mode*/,
+N                    FILE * __restrict /*stream*/) __attribute__((__nonnull__(2,3)));
+N   /*
+N    * opens the file whose name is the string pointed to by filename and
+N    * associates the stream pointed to by stream with it. The mode argument is
+N    * used just as in the fopen function.
+N    * The freopen function first attempts to close any file that is associated
+N    * with the specified stream. Failure to close the file successfully is
+N    * ignored. The error and end-of-file indicators for the stream are cleared.
+N    * Returns: a null pointer if the operation fails. Otherwise, freopen
+N    *          returns the value of the stream.
+N    */
+Nextern _ARMABI void setbuf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) void setbuf(FILE * __restrict  ,
+N                    char * __restrict /*buf*/) __attribute__((__nonnull__(1)));
+N   /*
+N    * Except that it returns no value, the setbuf function is equivalent to the
+N    * setvbuf function invoked with the values _IOFBF for mode and BUFSIZ for
+N    * size, or (if buf is a null pointer), with the value _IONBF for mode.
+N    * Returns: no value.
+N    */
+Nextern _ARMABI int setvbuf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int setvbuf(FILE * __restrict  ,
+N                   char * __restrict /*buf*/,
+N                   int /*mode*/, size_t /*size*/) __attribute__((__nonnull__(1)));
+N   /*
+N    * may be used after the stream pointed to by stream has been associated
+N    * with an open file but before it is read or written. The argument mode
+N    * determines how stream will be buffered, as follows: _IOFBF causes
+N    * input/output to be fully buffered; _IOLBF causes output to be line
+N    * buffered (the buffer will be flushed when a new-line character is
+N    * written, when the buffer is full, or when input is requested); _IONBF
+N    * causes input/output to be completely unbuffered. If buf is not the null
+N    * pointer, the array it points to may be used instead of an automatically
+N    * allocated buffer (the buffer must have a lifetime at least as great as
+N    * the open stream, so the stream should be closed before a buffer that has
+N    * automatic storage duration is deallocated upon block exit). The argument
+N    * size specifies the size of the array. The contents of the array at any
+N    * time are indeterminate.
+N    * Returns: zero on success, or nonzero if an invalid value is given for
+N    *          mode or size, or if the request cannot be honoured.
+N    */
+N#pragma __printf_args
+Nextern _ARMABI int fprintf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int fprintf(FILE * __restrict  ,
+N                    const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * writes output to the stream pointed to by stream, under control of the
+N    * string pointed to by format that specifies how subsequent arguments are
+N    * converted for output. If there are insufficient arguments for the format,
+N    * the behaviour is undefined. If the format is exhausted while arguments
+N    * remain, the excess arguments are evaluated but otherwise ignored. The
+N    * fprintf function returns when the end of the format string is reached.
+N    * The format shall be a multibyte character sequence, beginning and ending
+N    * in its initial shift state. The format is composed of zero or more
+N    * directives: ordinary multibyte characters (not %), which are copied
+N    * unchanged to the output stream; and conversion specifiers, each of which
+N    * results in fetching zero or more subsequent arguments. Each conversion
+N    * specification is introduced by the character %. For a description of the
+N    * available conversion specifiers refer to section 4.9.6.1 in the ANSI
+N    * draft mentioned at the start of this file or to any modern textbook on C.
+N    * The minimum value for the maximum number of characters producable by any
+N    * single conversion is at least 509.
+N    * Returns: the number of characters transmitted, or a negative value if an
+N    *          output error occurred.
+N    */
+N#pragma __printf_args
+Nextern _ARMABI int _fprintf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int _fprintf(FILE * __restrict  ,
+N                     const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to fprintf, but does not support floating-point formats.
+N    * You can use instead of fprintf to improve code size.
+N    * Returns: as fprintf.
+N    */
+N#pragma __printf_args
+Nextern _ARMABI int printf(const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int printf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to fprintf with the argument stdout interposed before the
+N    * arguments to printf.
+N    * Returns: the number of characters transmitted, or a negative value if an
+N    *          output error occurred.
+N    */
+N#pragma __printf_args
+Nextern _ARMABI int _printf(const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int _printf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to printf, but does not support floating-point formats.
+N    * You can use instead of printf to improve code size.
+N    * Returns: as printf.
+N    */
+N#pragma __printf_args
+Nextern _ARMABI int sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int sprintf(char * __restrict  , const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to fprintf, except that the argument s specifies an array
+N    * into which the generated output is to be written, rather than to a
+N    * stream. A null character is written at the end of the characters written;
+N    * it is not counted as part of the returned sum.
+N    * Returns: the number of characters written to the array, not counting the
+N    *          terminating null character.
+N    */
+N#pragma __printf_args
+Nextern _ARMABI int _sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int _sprintf(char * __restrict  , const char * __restrict  , ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to sprintf, but does not support floating-point formats.
+N    * You can use instead of sprintf to improve code size.
+N    * Returns: as sprintf.
+N    */
+N
+N#pragma __printf_args
+Nextern _ARMABI int __ARM_snprintf(char * __restrict /*s*/, size_t /*n*/,
+Xextern __declspec(__nothrow) int __ARM_snprintf(char * __restrict  , size_t  ,
+N                     const char * __restrict /*format*/, ...) __attribute__((__nonnull__(3)));
+N
+N#if !defined(__STRICT_ANSI__) || (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__) || (defined(__cplusplus) && 201103L <= __cplusplus)
+X#if !0L || (1L && 199901L <= 199409L) || (0L && 201103L <= __cplusplus)
+N#pragma __printf_args
+Nextern _ARMABI int snprintf(char * __restrict /*s*/, size_t /*n*/,
+Xextern __declspec(__nothrow) int snprintf(char * __restrict  , size_t  ,
+N                     const char * __restrict /*format*/, ...) __attribute__((__nonnull__(3)));
+N   /*
+N    * is equivalent to fprintf, except that the argument s specifies an array
+N    * into which the generated output is to be written, rather than to a
+N    * stream. The argument n specifies the size of the output array, so as to
+N    * avoid overflowing the buffer.
+N    * A null character is written at the end of the characters written, even
+N    * if the formatting was not completed; it is not counted as part of the
+N    * returned sum. At most n characters of the output buffer are used,
+N    * _including_ the null character.
+N    * Returns: the number of characters that would have been written to the
+N    *          array, not counting the terminating null character, if the
+N    *          array had been big enough. So if the return is >=0 and <n, then
+N    *          the entire string was successfully formatted; if the return is
+N    *          >=n, the string was truncated (but there is still a null char
+N    *          at the end of what was written); if the return is <0, there was
+N    *          an error.
+N    */
+N#endif
+N#pragma __printf_args
+Nextern _ARMABI int _snprintf(char * __restrict /*s*/, size_t /*n*/,
+Xextern __declspec(__nothrow) int _snprintf(char * __restrict  , size_t  ,
+N                      const char * __restrict /*format*/, ...) __attribute__((__nonnull__(3)));
+N   /*
+N    * is equivalent to snprintf, but does not support floating-point formats.
+N    * You can use instead of snprintf to improve code size.
+N    * Returns: as snprintf.
+N    */
+N#pragma __scanf_args
+Nextern _ARMABI int fscanf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int fscanf(FILE * __restrict  ,
+N                    const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * reads input from the stream pointed to by stream, under control of the
+N    * string pointed to by format that specifies the admissible input sequences
+N    * and how thay are to be converted for assignment, using subsequent
+N    * arguments as pointers to the objects to receive the converted input. If
+N    * there are insufficient arguments for the format, the behaviour is
+N    * undefined. If the format is exhausted while arguments remain, the excess
+N    * arguments are evaluated but otherwise ignored.
+N    * The format is composed of zero or more directives: one or more
+N    * white-space characters; an ordinary character (not %); or a conversion
+N    * specification. Each conversion specification is introduced by the
+N    * character %. For a description of the available conversion specifiers
+N    * refer to section 4.9.6.2 in the ANSI draft mentioned at the start of this
+N    * file, or to any modern textbook on C.
+N    * If end-of-file is encountered during input, conversion is terminated. If
+N    * end-of-file occurs before any characters matching the current directive
+N    * have been read (other than leading white space, where permitted),
+N    * execution of the current directive terminates with an input failure;
+N    * otherwise, unless execution of the current directive is terminated with a
+N    * matching failure, execution of the following directive (if any) is
+N    * terminated with an input failure.
+N    * If conversions terminates on a conflicting input character, the offending
+N    * input character is left unread in the input strem. Trailing white space
+N    * (including new-line characters) is left unread unless matched by a
+N    * directive. The success of literal matches and suppressed asignments is
+N    * not directly determinable other than via the %n directive.
+N    * Returns: the value of the macro EOF if an input failure occurs before any
+N    *          conversion. Otherwise, the fscanf function returns the number of
+N    *          input items assigned, which can be fewer than provided for, or
+N    *          even zero, in the event of an early conflict between an input
+N    *          character and the format.
+N    */
+N#pragma __scanf_args
+Nextern _ARMABI int _fscanf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int _fscanf(FILE * __restrict  ,
+N                     const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to fscanf, but does not support floating-point formats.
+N    * You can use instead of fscanf to improve code size.
+N    * Returns: as fscanf.
+N    */
+N#pragma __scanf_args
+Nextern _ARMABI int scanf(const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int scanf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to fscanf with the argument stdin interposed before the
+N    * arguments to scanf.
+N    * Returns: the value of the macro EOF if an input failure occurs before any
+N    *          conversion. Otherwise, the scanf function returns the number of
+N    *          input items assigned, which can be fewer than provided for, or
+N    *          even zero, in the event of an early matching failure.
+N    */
+N#pragma __scanf_args
+Nextern _ARMABI int _scanf(const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int _scanf(const char * __restrict  , ...) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to scanf, but does not support floating-point formats.
+N    * You can use instead of scanf to improve code size.
+N    * Returns: as scanf.
+N    */
+N#pragma __scanf_args
+Nextern _ARMABI int sscanf(const char * __restrict /*s*/,
+Xextern __declspec(__nothrow) int sscanf(const char * __restrict  ,
+N                    const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to fscanf except that the argument s specifies a string
+N    * from which the input is to be obtained, rather than from a stream.
+N    * Reaching the end of the string is equivalent to encountering end-of-file
+N    * for the fscanf function.
+N    * Returns: the value of the macro EOF if an input failure occurs before any
+N    *          conversion. Otherwise, the scanf function returns the number of
+N    *          input items assigned, which can be fewer than provided for, or
+N    *          even zero, in the event of an early matching failure.
+N    */
+N#pragma __scanf_args
+Nextern _ARMABI int _sscanf(const char * __restrict /*s*/,
+Xextern __declspec(__nothrow) int _sscanf(const char * __restrict  ,
+N                     const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to sscanf, but does not support floating-point formats.
+N    * You can use instead of sscanf to improve code size.
+N    * Returns: as sscanf.
+N    */
+N#if !defined(__STRICT_ANSI__) || (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__) || (defined(__cplusplus) && 201103L <= __cplusplus)
+X#if !0L || (1L && 199901L <= 199409L) || (0L && 201103L <= __cplusplus)
+N/* C99 additions */
+Nextern _ARMABI int vfscanf(FILE * __restrict /*stream*/, const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int vfscanf(FILE * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
+Nextern _ARMABI int vscanf(const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int vscanf(const char * __restrict  , __va_list) __attribute__((__nonnull__(1)));
+Nextern _ARMABI int vsscanf(const char * __restrict /*s*/, const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int vsscanf(const char * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
+N#endif
+Nextern _ARMABI int _vfscanf(FILE * __restrict /*stream*/, const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int _vfscanf(FILE * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
+Nextern _ARMABI int _vscanf(const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int _vscanf(const char * __restrict  , __va_list) __attribute__((__nonnull__(1)));
+Nextern _ARMABI int _vsscanf(const char * __restrict /*s*/, const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int _vsscanf(const char * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
+Nextern _ARMABI int __ARM_vsscanf(const char * __restrict /*s*/, const char * __restrict /*format*/, __va_list) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int __ARM_vsscanf(const char * __restrict  , const char * __restrict  , __va_list) __attribute__((__nonnull__(1,2)));
+N
+Nextern _ARMABI int vprintf(const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int vprintf(const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to printf, with the variable argument list replaced by arg,
+N    * which has been initialised by the va_start macro (and possibly subsequent
+N    * va_arg calls). The vprintf function does not invoke the va_end function.
+N    * Returns: the number of characters transmitted, or a negative value if an
+N    *          output error occurred.
+N    */
+Nextern _ARMABI int _vprintf(const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int _vprintf(const char * __restrict  , __va_list  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to vprintf, but does not support floating-point formats.
+N    * You can use instead of vprintf to improve code size.
+N    * Returns: as vprintf.
+N    */
+Nextern _ARMABI int vfprintf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int vfprintf(FILE * __restrict  ,
+N                    const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to fprintf, with the variable argument list replaced by
+N    * arg, which has been initialised by the va_start macro (and possibly
+N    * subsequent va_arg calls). The vfprintf function does not invoke the
+N    * va_end function.
+N    * Returns: the number of characters transmitted, or a negative value if an
+N    *          output error occurred.
+N    */
+Nextern _ARMABI int vsprintf(char * __restrict /*s*/,
+Xextern __declspec(__nothrow) int vsprintf(char * __restrict  ,
+N                     const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to sprintf, with the variable argument list replaced by
+N    * arg, which has been initialised by the va_start macro (and possibly
+N    * subsequent va_arg calls). The vsprintf function does not invoke the
+N    * va_end function.
+N    * Returns: the number of characters written in the array, not counting the
+N    *          terminating null character.
+N    */
+Nextern _ARMABI int __ARM_vsnprintf(char * __restrict /*s*/, size_t /*n*/,
+Xextern __declspec(__nothrow) int __ARM_vsnprintf(char * __restrict  , size_t  ,
+N                     const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(3)));
+N#if !defined(__STRICT_ANSI__) || (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__) || (defined(__cplusplus) && 201103L <= __cplusplus)
+X#if !0L || (1L && 199901L <= 199409L) || (0L && 201103L <= __cplusplus)
+Nextern _ARMABI int vsnprintf(char * __restrict /*s*/, size_t /*n*/,
+Xextern __declspec(__nothrow) int vsnprintf(char * __restrict  , size_t  ,
+N                     const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(3)));
+N   /*
+N    * is equivalent to snprintf, with the variable argument list replaced by
+N    * arg, which has been initialised by the va_start macro (and possibly
+N    * subsequent va_arg calls). The vsprintf function does not invoke the
+N    * va_end function.
+N    * Returns: the number of characters that would have been written in the
+N    *          array, not counting the terminating null character. As
+N    *          snprintf.
+N    */
+N#endif
+Nextern _ARMABI int _vsprintf(char * __restrict /*s*/,
+Xextern __declspec(__nothrow) int _vsprintf(char * __restrict  ,
+N                      const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to vsprintf, but does not support floating-point formats.
+N    * You can use instead of vsprintf to improve code size.
+N    * Returns: as vsprintf.
+N    */
+Nextern _ARMABI int _vfprintf(FILE * __restrict /*stream*/,
+Xextern __declspec(__nothrow) int _vfprintf(FILE * __restrict  ,
+N                     const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * is equivalent to vfprintf, but does not support floating-point formats.
+N    * You can use instead of vfprintf to improve code size.
+N    * Returns: as vfprintf.
+N    */
+Nextern _ARMABI int _vsnprintf(char * __restrict /*s*/, size_t /*n*/,
+Xextern __declspec(__nothrow) int _vsnprintf(char * __restrict  , size_t  ,
+N                      const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(3)));
+N   /*
+N    * is equivalent to vsnprintf, but does not support floating-point formats.
+N    * You can use instead of vsnprintf to improve code size.
+N    * Returns: as vsnprintf.
+N    */
+N#if !defined(__STRICT_ANSI__)
+X#if !0L
+N#pragma __printf_args
+Nextern _ARMABI int asprintf(char ** /*strp*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int asprintf(char **  , const char * __restrict  , ...) __attribute__((__nonnull__(2)));
+Nextern _ARMABI int vasprintf(char ** /*strp*/, const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int vasprintf(char **  , const char * __restrict  , __va_list  ) __attribute__((__nonnull__(2)));
+N#endif
+N#pragma __printf_args
+Nextern _ARMABI int __ARM_asprintf(char ** /*strp*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int __ARM_asprintf(char **  , const char * __restrict  , ...) __attribute__((__nonnull__(2)));
+Nextern _ARMABI int __ARM_vasprintf(char ** /*strp*/, const char * __restrict /*format*/, __va_list /*arg*/) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int __ARM_vasprintf(char **  , const char * __restrict  , __va_list  ) __attribute__((__nonnull__(2)));
+N   /*
+N    * dynamically allocates a buffer of the right size for the
+N    * formatted string, and returns it in (*strp). Formal return value
+N    * is the same as any other printf variant, except that it returns
+N    * -1 if the buffer could not be allocated.
+N    *
+N    * (The functions with __ARM_ prefixed names are identical to the
+N    * ones without, but are available in all compilation modes without
+N    * violating user namespace.)
+N    */
+N
+Nextern _ARMABI int fgetc(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int fgetc(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * obtains the next character (if present) as an unsigned char converted to
+N    * an int, from the input stream pointed to by stream, and advances the
+N    * associated file position indicator (if defined).
+N    * Returns: the next character from the input stream pointed to by stream.
+N    *          If the stream is at end-of-file, the end-of-file indicator is
+N    *          set and fgetc returns EOF. If a read error occurs, the error
+N    *          indicator is set and fgetc returns EOF.
+N    */
+Nextern _ARMABI char *fgets(char * __restrict /*s*/, int /*n*/,
+Xextern __declspec(__nothrow) char *fgets(char * __restrict  , int  ,
+N                    FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,3)));
+N   /*
+N    * reads at most one less than the number of characters specified by n from
+N    * the stream pointed to by stream into the array pointed to by s. No
+N    * additional characters are read after a new-line character (which is
+N    * retained) or after end-of-file. A null character is written immediately
+N    * after the last character read into the array.
+N    * Returns: s if successful. If end-of-file is encountered and no characters
+N    *          have been read into the array, the contents of the array remain
+N    *          unchanged and a null pointer is returned. If a read error occurs
+N    *          during the operation, the array contents are indeterminate and a
+N    *          null pointer is returned.
+N    */
+Nextern _ARMABI int fputc(int /*c*/, FILE * /*stream*/) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int fputc(int  , FILE *  ) __attribute__((__nonnull__(2)));
+N   /*
+N    * writes the character specified by c (converted to an unsigned char) to
+N    * the output stream pointed to by stream, at the position indicated by the
+N    * asociated file position indicator (if defined), and advances the
+N    * indicator appropriately. If the file position indicator is not defined,
+N    * the character is appended to the output stream.
+N    * Returns: the character written. If a write error occurs, the error
+N    *          indicator is set and fputc returns EOF.
+N    */
+Nextern _ARMABI int fputs(const char * __restrict /*s*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int fputs(const char * __restrict  , FILE * __restrict  ) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * writes the string pointed to by s to the stream pointed to by stream.
+N    * The terminating null character is not written.
+N    * Returns: EOF if a write error occurs; otherwise it returns a nonnegative
+N    *          value.
+N    */
+Nextern _ARMABI int getc(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int getc(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * is equivalent to fgetc except that it may be implemented as an unsafe
+N    * macro (stream may be evaluated more than once, so the argument should
+N    * never be an expression with side-effects).
+N    * Returns: the next character from the input stream pointed to by stream.
+N    *          If the stream is at end-of-file, the end-of-file indicator is
+N    *          set and getc returns EOF. If a read error occurs, the error
+N    *          indicator is set and getc returns EOF.
+N    */
+N#ifdef __cplusplus
+S    inline int getchar() { return getc(stdin); }
+N#else
+N    #define getchar() getc(stdin)
+N    extern _ARMABI int (getchar)(void);
+X    extern __declspec(__nothrow) int (getchar)(void);
+N#endif
+N   /*
+N    * is equivalent to getc with the argument stdin.
+N    * Returns: the next character from the input stream pointed to by stdin.
+N    *          If the stream is at end-of-file, the end-of-file indicator is
+N    *          set and getchar returns EOF. If a read error occurs, the error
+N    *          indicator is set and getchar returns EOF.
+N    */
+Nextern _ARMABI char *gets(char * /*s*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) char *gets(char *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * reads characters from the input stream pointed to by stdin into the array
+N    * pointed to by s, until end-of-file is encountered or a new-line character
+N    * is read. Any new-line character is discarded, and a null character is
+N    * written immediately after the last character read into the array.
+N    * Returns: s if successful. If end-of-file is encountered and no characters
+N    *          have been read into the array, the contents of the array remain
+N    *          unchanged and a null pointer is returned. If a read error occurs
+N    *          during the operation, the array contents are indeterminate and a
+N    *          null pointer is returned.
+N    */
+Nextern _ARMABI int putc(int /*c*/, FILE * /*stream*/) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int putc(int  , FILE *  ) __attribute__((__nonnull__(2)));
+N   /*
+N    * is equivalent to fputc except that it may be implemented as aan unsafe
+N    * macro (stream may be evaluated more than once, so the argument should
+N    * never be an expression with side-effects).
+N    * Returns: the character written. If a write error occurs, the error
+N    *          indicator is set and putc returns EOF.
+N    */
+N#ifdef __cplusplus
+S    inline int putchar(int __c) { return putc(__c, stdout); }
+N#else
+N    #define putchar(c) putc(c, stdout)
+N    extern _ARMABI int (putchar)(int /*c*/);
+X    extern __declspec(__nothrow) int (putchar)(int  );
+N#endif
+N   /*
+N    * is equivalent to putc with the second argument stdout.
+N    * Returns: the character written. If a write error occurs, the error
+N    *          indicator is set and putc returns EOF.
+N    */
+Nextern _ARMABI int puts(const char * /*s*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int puts(const char *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * writes the string pointed to by s to the stream pointed to by stdout, and
+N    * appends a new-line character to the output. The terminating null
+N    * character is not written.
+N    * Returns: EOF if a write error occurs; otherwise it returns a nonnegative
+N    *          value.
+N    */
+Nextern _ARMABI int ungetc(int /*c*/, FILE * /*stream*/) __attribute__((__nonnull__(2)));
+Xextern __declspec(__nothrow) int ungetc(int  , FILE *  ) __attribute__((__nonnull__(2)));
+N   /*
+N    * pushes the character specified by c (converted to an unsigned char) back
+N    * onto the input stream pointed to by stream. The character will be
+N    * returned by the next read on that stream. An intervening call to the
+N    * fflush function or to a file positioning function (fseek, fsetpos,
+N    * rewind) discards any pushed-back characters. The extern _ARMABIal storage
+N    * corresponding to the stream is unchanged.
+N    * One character pushback is guaranteed. If the unget function is called too
+N    * many times on the same stream without an intervening read or file
+N    * positioning operation on that stream, the operation may fail.
+N    * If the value of c equals that of the macro EOF, the operation fails and
+N    * the input stream is unchanged.
+N    * A successful call to the ungetc function clears the end-of-file
+N    * indicator. The value of the file position indicator after reading or
+N    * discarding all pushed-back characters shall be the same as it was before
+N    * the characters were pushed back. For a text stream, the value of the file
+N    * position indicator after a successful call to the ungetc function is
+N    * unspecified until all pushed-back characters are read or discarded. For a
+N    * binary stream, the file position indicator is decremented by each
+N    * successful call to the ungetc function; if its value was zero before a
+N    * call, it is indeterminate after the call.
+N    * Returns: the character pushed back after conversion, or EOF if the
+N    *          operation fails.
+N    */
+N
+Nextern _ARMABI size_t fread(void * __restrict /*ptr*/,
+Xextern __declspec(__nothrow) size_t fread(void * __restrict  ,
+N                    size_t /*size*/, size_t /*nmemb*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,4)));
+N   /*
+N    * reads into the array pointed to by ptr, up to nmemb members whose size is
+N    * specified by size, from the stream pointed to by stream. The file
+N    * position indicator (if defined) is advanced by the number of characters
+N    * successfully read. If an error occurs, the resulting value of the file
+N    * position indicator is indeterminate. If a partial member is read, its
+N    * value is indeterminate. The ferror or feof function shall be used to
+N    * distinguish between a read error and end-of-file.
+N    * Returns: the number of members successfully read, which may be less than
+N    *          nmemb if a read error or end-of-file is encountered. If size or
+N    *          nmemb is zero, fread returns zero and the contents of the array
+N    *          and the state of the stream remain unchanged.
+N    */
+N
+Nextern _ARMABI size_t __fread_bytes_avail(void * __restrict /*ptr*/,
+Xextern __declspec(__nothrow) size_t __fread_bytes_avail(void * __restrict  ,
+N                    size_t /*count*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,3)));
+N   /*
+N    * reads into the array pointed to by ptr, up to count characters from the
+N    * stream pointed to by stream. The file position indicator (if defined)
+N    * is advanced by the number of characters successfully read. If an error
+N    * occurs, the resulting value of the file position indicator is
+N    * indeterminate. The ferror or feof function shall be used to
+N    * distinguish between a read error and end-of-file.  The call will block
+N    * only if no characters are available.
+N    * Returns: the number of characters successfully read, which may be less than
+N    *          count. If count is zero, __fread_bytes_avail returns zero and
+N    *          the contents of the array and the state of the stream remain
+N    *          unchanged.
+N    */
+N
+Nextern _ARMABI size_t fwrite(const void * __restrict /*ptr*/,
+Xextern __declspec(__nothrow) size_t fwrite(const void * __restrict  ,
+N                    size_t /*size*/, size_t /*nmemb*/, FILE * __restrict /*stream*/) __attribute__((__nonnull__(1,4)));
+N   /*
+N    * writes, from the array pointed to by ptr up to nmemb members whose size
+N    * is specified by size, to the stream pointed to by stream. The file
+N    * position indicator (if defined) is advanced by the number of characters
+N    * successfully written. If an error occurs, the resulting value of the file
+N    * position indicator is indeterminate.
+N    * Returns: the number of members successfully written, which will be less
+N    *          than nmemb only if a write error is encountered.
+N    */
+N
+Nextern _ARMABI int fgetpos(FILE * __restrict /*stream*/, fpos_t * __restrict /*pos*/) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int fgetpos(FILE * __restrict  , fpos_t * __restrict  ) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * stores the current value of the file position indicator for the stream
+N    * pointed to by stream in the object pointed to by pos. The value stored
+N    * contains unspecified information usable by the fsetpos function for
+N    * repositioning the stream to its position at the time  of the call to the
+N    * fgetpos function.
+N    * Returns: zero, if successful. Otherwise nonzero is returned and the
+N    *          integer expression errno is set to an implementation-defined
+N    *          nonzero value.
+N    */
+Nextern _ARMABI int fseek(FILE * /*stream*/, long int /*offset*/, int /*whence*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int fseek(FILE *  , long int  , int  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * sets the file position indicator for the stream pointed to by stream.
+N    * For a binary stream, the new position is at the signed number of
+N    * characters specified by offset away from the point specified by whence.
+N    * The specified point is the beginning of the file for SEEK_SET, the
+N    * current position in the file for SEEK_CUR, or end-of-file for SEEK_END.
+N    * A binary stream need not meaningfully support fseek calls with a whence
+N    * value of SEEK_END.
+N    * For a text stream, either offset shall be zero, or offset shall be a
+N    * value returned by an earlier call to the ftell function on the same
+N    * stream and whence shall be SEEK_SET.
+N    * The fseek function clears the end-of-file indicator and undoes any
+N    * effects of the ungetc function on the same stream. After an fseek call,
+N    * the next operation on an update stream may be either input or output.
+N    * Returns: nonzero only for a request that cannot be satisfied.
+N    */
+Nextern _ARMABI int fsetpos(FILE * __restrict /*stream*/, const fpos_t * __restrict /*pos*/) __attribute__((__nonnull__(1,2)));
+Xextern __declspec(__nothrow) int fsetpos(FILE * __restrict  , const fpos_t * __restrict  ) __attribute__((__nonnull__(1,2)));
+N   /*
+N    * sets  the file position indicator for the stream pointed to by stream
+N    * according to the value of the object pointed to by pos, which shall be a
+N    * value returned by an earlier call to the fgetpos function on the same
+N    * stream.
+N    * The fsetpos function clears the end-of-file indicator and undoes any
+N    * effects of the ungetc function on the same stream. After an fsetpos call,
+N    * the next operation on an update stream may be either input or output.
+N    * Returns: zero, if successful. Otherwise nonzero is returned and the
+N    *          integer expression errno is set to an implementation-defined
+N    *          nonzero value.
+N    */
+Nextern _ARMABI long int ftell(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) long int ftell(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * obtains the current value of the file position indicator for the stream
+N    * pointed to by stream. For a binary stream, the value is the number of
+N    * characters from the beginning of the file. For a text stream, the file
+N    * position indicator contains unspecified information, usable by the fseek
+N    * function for returning the file position indicator to its position at the
+N    * time of the ftell call; the difference between two such return values is
+N    * not necessarily a meaningful measure of the number of characters written
+N    * or read.
+N    * Returns: if successful, the current value of the file position indicator.
+N    *          On failure, the ftell function returns -1L and sets the integer
+N    *          expression errno to an implementation-defined nonzero value.
+N    */
+Nextern _ARMABI void rewind(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) void rewind(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * sets the file position indicator for the stream pointed to by stream to
+N    * the beginning of the file. It is equivalent to
+N    *          (void)fseek(stream, 0L, SEEK_SET)
+N    * except that the error indicator for the stream is also cleared.
+N    * Returns: no value.
+N    */
+N
+Nextern _ARMABI void clearerr(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) void clearerr(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * clears the end-of-file and error indicators for the stream pointed to by
+N    * stream. These indicators are cleared only when the file is opened or by
+N    * an explicit call to the clearerr function or to the rewind function.
+N    * Returns: no value.
+N    */
+N
+Nextern _ARMABI int feof(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int feof(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * tests the end-of-file indicator for the stream pointed to by stream.
+N    * Returns: nonzero iff the end-of-file indicator is set for stream.
+N    */
+Nextern _ARMABI int ferror(FILE * /*stream*/) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int ferror(FILE *  ) __attribute__((__nonnull__(1)));
+N   /*
+N    * tests the error indicator for the stream pointed to by stream.
+N    * Returns: nonzero iff the error indicator is set for stream.
+N    */
+Nextern _ARMABI void perror(const char * /*s*/);
+Xextern __declspec(__nothrow) void perror(const char *  );
+N   /*
+N    * maps the error number  in the integer expression errno to an error
+N    * message. It writes a sequence of characters to the standard error stream
+N    * thus: first (if s is not a null pointer and the character pointed to by
+N    * s is not the null character), the string pointed to by s followed by a
+N    * colon and a space; then an appropriate error message string followed by
+N    * a new-line character. The contents of the error message strings are the
+N    * same as those returned by the strerror function with argument errno,
+N    * which are implementation-defined.
+N    * Returns: no value.
+N    */
+N
+Nextern _ARMABI int _fisatty(FILE * /*stream*/ ) __attribute__((__nonnull__(1)));
+Xextern __declspec(__nothrow) int _fisatty(FILE *   ) __attribute__((__nonnull__(1)));
+N    /* Returns 1 if the stream is tty (stdin), 0 otherwise. Not ANSI compliant.
+N     */
+N
+Nextern _ARMABI void __use_no_semihosting_swi(void);
+Xextern __declspec(__nothrow) void __use_no_semihosting_swi(void);
+Nextern _ARMABI void __use_no_semihosting(void);
+Xextern __declspec(__nothrow) void __use_no_semihosting(void);
+N    /*
+N     * Referencing either of these symbols will cause a link-time
+N     * error if any library functions that use semihosting SWI
+N     * calls are also present in the link, i.e. you define it if
+N     * you want to make sure you haven't accidentally used any such
+N     * SWIs.
+N     */
+N
+N    #ifdef __cplusplus
+S        }  /* extern "C" */
+S      }  /* namespace std */
+N    #endif
+N  #endif /* __STDIO_DECLS */
+N
+N  #if _AEABI_PORTABILITY_LEVEL != 0 && !defined _AEABI_PORTABLE
+X  #if _AEABI_PORTABILITY_LEVEL != 0 && !0L
+S    #define _AEABI_PORTABLE
+N  #endif
+N
+N  #if defined(__cplusplus) && !defined(__STDIO_NO_EXPORTS)
+X  #if 0L && !0L
+S    using ::std::size_t;
+S    using ::std::fpos_t;
+S    using ::std::FILE;
+S    using ::std::remove;
+S    using ::std::rename;
+S    using ::std::tmpfile;
+S    using ::std::tmpnam;
+S    using ::std::fclose;
+S    using ::std::fflush;
+S    using ::std::fopen;
+S    using ::std::freopen;
+S    using ::std::setbuf;
+S    using ::std::setvbuf;
+S    using ::std::fprintf;
+S    using ::std::_fprintf;
+S    using ::std::printf;
+S    using ::std::_printf;
+S    using ::std::sprintf;
+S    using ::std::_sprintf;
+S    #if !defined(__STRICT_ANSI__) || (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__) || (defined(__cplusplus) && 201103L <= __cplusplus)
+S      using ::std::snprintf;
+S      using ::std::vsnprintf;
+S      using ::std::vfscanf;
+S      using ::std::vscanf;
+S      using ::std::vsscanf;
+S    #endif
+S    using ::std::_snprintf;
+S    using ::std::_vsnprintf;
+S#if !defined(__STRICT_ANSI__)
+S    using ::std::asprintf;
+S    using ::std::vasprintf;
+S#endif
+S    using ::std::__ARM_asprintf;
+S    using ::std::__ARM_vasprintf;
+S    using ::std::__ARM_vsnprintf;
+S    using ::std::__ARM_snprintf;
+S    using ::std::__ARM_vsscanf;
+S    using ::std::fscanf;
+S    using ::std::_fscanf;
+S    using ::std::scanf;
+S    using ::std::_scanf;
+S    using ::std::sscanf;
+S    using ::std::_sscanf;
+S    using ::std::_vfscanf;
+S    using ::std::_vscanf;
+S    using ::std::_vsscanf;
+S    using ::std::vprintf;
+S    using ::std::_vprintf;
+S    using ::std::vfprintf;
+S    using ::std::_vfprintf;
+S    using ::std::vsprintf;
+S    using ::std::_vsprintf;
+S    using ::std::fgetc;
+S    using ::std::fgets;
+S    using ::std::fputc;
+S    using ::std::fputs;
+S    using ::std::getc;
+S    using ::std::getchar;
+S    using ::std::gets;
+S    using ::std::putc;
+S    using ::std::putchar;
+S    using ::std::puts;
+S    using ::std::ungetc;
+S    using ::std::fread;
+S    using ::std::__fread_bytes_avail;
+S    using ::std::fwrite;
+S    using ::std::fgetpos;
+S    using ::std::fseek;
+S    using ::std::fsetpos;
+S    using ::std::ftell;
+S    using ::std::rewind;
+S    using ::std::clearerr;
+S    using ::std::feof;
+S    using ::std::ferror;
+S    using ::std::perror;
+S    using ::std::_fisatty;
+S    using ::std::__use_no_semihosting_swi;
+S    using ::std::__use_no_semihosting;
+N  #endif
+N
+N#endif /* ndef __stdio_h */
+N
+N/* end of stdio.h */
+N
+L 9 "..\src\wechat\MmBp_Embedded_1.0.4\crc32\crc32.c" 2
+N#include "crc32.h"
+L 1 "..\src\wechat\MmBp_Embedded_1.0.4\crc32\crc32.h" 1
+N//  crc32.h
+N//  WeChat Embedded
+N//
+N//  Created by harlliu on 14-03-03.
+N//  Copyright 2014 Tencent. All rights reserved.
+N//
+N
+N#ifndef __CRC32_H__
+N#define __CRC32_H__
+N
+N#include <stdint.h>
+L 1 "F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h" 1
+N/* Copyright (C) ARM Ltd., 1999,2014 */
+N/* All rights reserved */
+N
+N/*
+N * RCS $Revision$
+N * Checkin $Date$
+N * Revising $Author: agrant $
+N */
+N
+N#ifndef __stdint_h
+N#define __stdint_h
+N#define __ARMCLIB_VERSION 5060034
+N
+N  #ifdef __INT64_TYPE__
+S    /* armclang predefines '__INT64_TYPE__' and '__INT64_C_SUFFIX__' */
+S    #define __INT64 __INT64_TYPE__
+N  #else
+N    /* armcc has builtin '__int64' which can be used in --strict mode */
+N    #define __INT64 __int64
+N    #define __INT64_C_SUFFIX__ ll
+N  #endif
+N  #define __PASTE2(x, y) x ## y
+N  #define __PASTE(x, y) __PASTE2(x, y)
+N  #define __INT64_C(x)  __ESCAPE__(__PASTE(x, __INT64_C_SUFFIX__))
+N  #define __UINT64_C(x)  __ESCAPE__(__PASTE(x ## u, __INT64_C_SUFFIX__))
+N  #if defined(__clang__) || (defined(__ARMCC_VERSION) && !defined(__STRICT_ANSI__))
+X  #if 0L || (1L && !0L)
+N    /* armclang and non-strict armcc allow 'long long' in system headers */
+N    #define __LONGLONG long long
+N  #else
+S    /* strict armcc has '__int64' */
+S    #define __LONGLONG __int64
+N  #endif
+N
+N  #ifndef __STDINT_DECLS
+N  #define __STDINT_DECLS
+N
+N    #undef __CLIBNS
+N
+N    #ifdef __cplusplus
+S      namespace std {
+S          #define __CLIBNS std::
+S          extern "C" {
+N    #else
+N      #define __CLIBNS
+N    #endif  /* __cplusplus */
+N
+N
+N/*
+N * 'signed' is redundant below, except for 'signed char' and if
+N * the typedef is used to declare a bitfield.
+N */
+N
+N    /* 7.18.1.1 */
+N
+N    /* exact-width signed integer types */
+Ntypedef   signed          char int8_t;
+Ntypedef   signed short     int int16_t;
+Ntypedef   signed           int int32_t;
+Ntypedef   signed       __INT64 int64_t;
+Xtypedef   signed       __int64 int64_t;
+N
+N    /* exact-width unsigned integer types */
+Ntypedef unsigned          char uint8_t;
+Ntypedef unsigned short     int uint16_t;
+Ntypedef unsigned           int uint32_t;
+Ntypedef unsigned       __INT64 uint64_t;
+Xtypedef unsigned       __int64 uint64_t;
+N
+N    /* 7.18.1.2 */
+N
+N    /* smallest type of at least n bits */
+N    /* minimum-width signed integer types */
+Ntypedef   signed          char int_least8_t;
+Ntypedef   signed short     int int_least16_t;
+Ntypedef   signed           int int_least32_t;
+Ntypedef   signed       __INT64 int_least64_t;
+Xtypedef   signed       __int64 int_least64_t;
+N
+N    /* minimum-width unsigned integer types */
+Ntypedef unsigned          char uint_least8_t;
+Ntypedef unsigned short     int uint_least16_t;
+Ntypedef unsigned           int uint_least32_t;
+Ntypedef unsigned       __INT64 uint_least64_t;
+Xtypedef unsigned       __int64 uint_least64_t;
+N
+N    /* 7.18.1.3 */
+N
+N    /* fastest minimum-width signed integer types */
+Ntypedef   signed           int int_fast8_t;
+Ntypedef   signed           int int_fast16_t;
+Ntypedef   signed           int int_fast32_t;
+Ntypedef   signed       __INT64 int_fast64_t;
+Xtypedef   signed       __int64 int_fast64_t;
+N
+N    /* fastest minimum-width unsigned integer types */
+Ntypedef unsigned           int uint_fast8_t;
+Ntypedef unsigned           int uint_fast16_t;
+Ntypedef unsigned           int uint_fast32_t;
+Ntypedef unsigned       __INT64 uint_fast64_t;
+Xtypedef unsigned       __int64 uint_fast64_t;
+N
+N    /* 7.18.1.4 integer types capable of holding object pointers */
+N#if __sizeof_ptr == 8
+X#if 4 == 8
+Stypedef   signed       __INT64 intptr_t;
+Stypedef unsigned       __INT64 uintptr_t;
+N#else
+Ntypedef   signed           int intptr_t;
+Ntypedef unsigned           int uintptr_t;
+N#endif
+N
+N    /* 7.18.1.5 greatest-width integer types */
+Ntypedef   signed     __LONGLONG intmax_t;
+Xtypedef   signed     long long intmax_t;
+Ntypedef unsigned     __LONGLONG uintmax_t;
+Xtypedef unsigned     long long uintmax_t;
+N
+N
+N#if !defined(__cplusplus) || defined(__STDC_LIMIT_MACROS)
+X#if !0L || 0L
+N
+N    /* 7.18.2.1 */
+N
+N    /* minimum values of exact-width signed integer types */
+N#define INT8_MIN                   -128
+N#define INT16_MIN                -32768
+N#define INT32_MIN          (~0x7fffffff)   /* -2147483648 is unsigned */
+N#define INT64_MIN  __INT64_C(~0x7fffffffffffffff) /* -9223372036854775808 is unsigned */
+N
+N    /* maximum values of exact-width signed integer types */
+N#define INT8_MAX                    127
+N#define INT16_MAX                 32767
+N#define INT32_MAX            2147483647
+N#define INT64_MAX  __INT64_C(9223372036854775807)
+N
+N    /* maximum values of exact-width unsigned integer types */
+N#define UINT8_MAX                   255
+N#define UINT16_MAX                65535
+N#define UINT32_MAX           4294967295u
+N#define UINT64_MAX __UINT64_C(18446744073709551615)
+N
+N    /* 7.18.2.2 */
+N
+N    /* minimum values of minimum-width signed integer types */
+N#define INT_LEAST8_MIN                   -128
+N#define INT_LEAST16_MIN                -32768
+N#define INT_LEAST32_MIN          (~0x7fffffff)
+N#define INT_LEAST64_MIN  __INT64_C(~0x7fffffffffffffff)
+N
+N    /* maximum values of minimum-width signed integer types */
+N#define INT_LEAST8_MAX                    127
+N#define INT_LEAST16_MAX                 32767
+N#define INT_LEAST32_MAX            2147483647
+N#define INT_LEAST64_MAX  __INT64_C(9223372036854775807)
+N
+N    /* maximum values of minimum-width unsigned integer types */
+N#define UINT_LEAST8_MAX                   255
+N#define UINT_LEAST16_MAX                65535
+N#define UINT_LEAST32_MAX           4294967295u
+N#define UINT_LEAST64_MAX __UINT64_C(18446744073709551615)
+N
+N    /* 7.18.2.3 */
+N
+N    /* minimum values of fastest minimum-width signed integer types */
+N#define INT_FAST8_MIN           (~0x7fffffff)
+N#define INT_FAST16_MIN          (~0x7fffffff)
+N#define INT_FAST32_MIN          (~0x7fffffff)
+N#define INT_FAST64_MIN  __INT64_C(~0x7fffffffffffffff)
+N
+N    /* maximum values of fastest minimum-width signed integer types */
+N#define INT_FAST8_MAX             2147483647
+N#define INT_FAST16_MAX            2147483647
+N#define INT_FAST32_MAX            2147483647
+N#define INT_FAST64_MAX  __INT64_C(9223372036854775807)
+N
+N    /* maximum values of fastest minimum-width unsigned integer types */
+N#define UINT_FAST8_MAX            4294967295u
+N#define UINT_FAST16_MAX           4294967295u
+N#define UINT_FAST32_MAX           4294967295u
+N#define UINT_FAST64_MAX __UINT64_C(18446744073709551615)
+N
+N    /* 7.18.2.4 */
+N
+N    /* minimum value of pointer-holding signed integer type */
+N#if __sizeof_ptr == 8
+X#if 4 == 8
+S#define INTPTR_MIN INT64_MIN
+N#else
+N#define INTPTR_MIN INT32_MIN
+N#endif
+N
+N    /* maximum value of pointer-holding signed integer type */
+N#if __sizeof_ptr == 8
+X#if 4 == 8
+S#define INTPTR_MAX INT64_MAX
+N#else
+N#define INTPTR_MAX INT32_MAX
+N#endif
+N
+N    /* maximum value of pointer-holding unsigned integer type */
+N#if __sizeof_ptr == 8
+X#if 4 == 8
+S#define UINTPTR_MAX UINT64_MAX
+N#else
+N#define UINTPTR_MAX UINT32_MAX
+N#endif
+N
+N    /* 7.18.2.5 */
+N
+N    /* minimum value of greatest-width signed integer type */
+N#define INTMAX_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum value of greatest-width signed integer type */
+N#define INTMAX_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum value of greatest-width unsigned integer type */
+N#define UINTMAX_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.3 */
+N
+N    /* limits of ptrdiff_t */
+N#if __sizeof_ptr == 8
+X#if 4 == 8
+S#define PTRDIFF_MIN INT64_MIN
+S#define PTRDIFF_MAX INT64_MAX
+N#else
+N#define PTRDIFF_MIN INT32_MIN
+N#define PTRDIFF_MAX INT32_MAX
+N#endif
+N
+N    /* limits of sig_atomic_t */
+N#define SIG_ATOMIC_MIN (~0x7fffffff)
+N#define SIG_ATOMIC_MAX   2147483647
+N
+N    /* limit of size_t */
+N#if __sizeof_ptr == 8
+X#if 4 == 8
+S#define SIZE_MAX UINT64_MAX
+N#else
+N#define SIZE_MAX UINT32_MAX
+N#endif
+N
+N    /* limits of wchar_t */
+N    /* NB we have to undef and redef because they're defined in both
+N     * stdint.h and wchar.h */
+N#undef WCHAR_MIN
+N#undef WCHAR_MAX
+N
+N#if defined(__WCHAR32) || (defined(__ARM_SIZEOF_WCHAR_T) && __ARM_SIZEOF_WCHAR_T == 4)
+X#if 0L || (0L && __ARM_SIZEOF_WCHAR_T == 4)
+S  #define WCHAR_MIN   0
+S  #define WCHAR_MAX   0xffffffffU
+N#else
+N  #define WCHAR_MIN   0
+N  #define WCHAR_MAX   65535
+N#endif
+N
+N    /* limits of wint_t */
+N#define WINT_MIN (~0x7fffffff)
+N#define WINT_MAX 2147483647
+N
+N#endif /* __STDC_LIMIT_MACROS */
+N
+N#if !defined(__cplusplus) || defined(__STDC_CONSTANT_MACROS)
+X#if !0L || 0L
+N
+N    /* 7.18.4.1 macros for minimum-width integer constants */
+N#define INT8_C(x)   (x)
+N#define INT16_C(x)  (x)
+N#define INT32_C(x)  (x)
+N#define INT64_C(x)  __INT64_C(x)
+N
+N#define UINT8_C(x)  (x ## u)
+N#define UINT16_C(x) (x ## u)
+N#define UINT32_C(x) (x ## u)
+N#define UINT64_C(x) __UINT64_C(x)
+N
+N    /* 7.18.4.2 macros for greatest-width integer constants */
+N#define INTMAX_C(x)  __ESCAPE__(x ## ll)
+N#define UINTMAX_C(x) __ESCAPE__(x ## ull)
+N
+N#endif /* __STDC_CONSTANT_MACROS */
+N
+N    #ifdef __cplusplus
+S         }  /* extern "C" */
+S      }  /* namespace std */
+N    #endif /* __cplusplus */
+N  #endif /* __STDINT_DECLS */
+N
+N  #ifdef __cplusplus
+S    #ifndef __STDINT_NO_EXPORTS
+S      using ::std::int8_t;
+S      using ::std::int16_t;
+S      using ::std::int32_t;
+S      using ::std::int64_t;
+S      using ::std::uint8_t;
+S      using ::std::uint16_t;
+S      using ::std::uint32_t;
+S      using ::std::uint64_t;
+S      using ::std::int_least8_t;
+S      using ::std::int_least16_t;
+S      using ::std::int_least32_t;
+S      using ::std::int_least64_t;
+S      using ::std::uint_least8_t;
+S      using ::std::uint_least16_t;
+S      using ::std::uint_least32_t;
+S      using ::std::uint_least64_t;
+S      using ::std::int_fast8_t;
+S      using ::std::int_fast16_t;
+S      using ::std::int_fast32_t;
+S      using ::std::int_fast64_t;
+S      using ::std::uint_fast8_t;
+S      using ::std::uint_fast16_t;
+S      using ::std::uint_fast32_t;
+S      using ::std::uint_fast64_t;
+S      using ::std::intptr_t;
+S      using ::std::uintptr_t;
+S      using ::std::intmax_t;
+S      using ::std::uintmax_t;
+S    #endif
+N  #endif /* __cplusplus */
+N
+N#undef __INT64
+N#undef __LONGLONG
+N
+N#endif /* __stdint_h */
+N
+N/* end of stdint.h */
+L 12 "..\src\wechat\MmBp_Embedded_1.0.4\crc32\crc32.h" 2
+N
+N#ifdef __cplusplus
+Sextern "C" {
+N#endif
+N
+N    uint32_t wechat_crc32(uint32_t crc, const uint8_t *buf, int len);
+N
+N#ifdef __cplusplus
+S}
+N#endif
+N
+N
+N#endif
+L 10 "..\src\wechat\MmBp_Embedded_1.0.4\crc32\crc32.c" 2
+N
+N#define DO1(buf) crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);
+N#define DO2(buf)  DO1(buf); DO1(buf);
+N#define DO4(buf)  DO2(buf); DO2(buf);
+N#define DO8(buf)  DO4(buf); DO4(buf);
+N
+N
+Nstatic uint32_t crc_table(uint32_t index)
+N{
+N	uint32_t c = index;
+N	uint32_t poly = 0xedb88320L;
+N	int k;
+N
+N	for (k = 0; k < 8; k++)
+N		c = c & 1 ? poly ^ (c >> 1) : c >> 1;
+N
+N	return c;
+N}
+N
+Nuint32_t wechat_crc32(uint32_t crc, const uint8_t *buf, int len)
+N{
+N    if (buf == NULL) return 0L;
+X    if (buf == 0) return 0L;
+N
+N    crc = crc ^ 0xffffffffL;
+N    while (len >= 8)
+N    {
+N      DO8(buf);
+X      crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);;; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);;;; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);;; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);; crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);;;;;
+N      len -= 8;
+N    }
+N    if (len) do {
+N      DO1(buf);
+X      crc = crc_table(((int)crc ^ (*buf++)) & 0xff) ^ (crc >> 8);;
+N    } while (--len);
+N    return crc ^ 0xffffffffL;
+N}

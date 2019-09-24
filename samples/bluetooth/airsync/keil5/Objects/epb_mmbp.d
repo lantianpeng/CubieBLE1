@@ -1,0 +1,11 @@
+.\objects\epb_mmbp.o: ..\src\wechat\MmBp_Embedded_1.0.4\protobuf\epb_MmBp.c
+.\objects\epb_mmbp.o: ..\src\include\autoconf_app.h
+.\objects\epb_mmbp.o: ..\..\..\..\include\generated\autoconf.h
+.\objects\epb_mmbp.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\epb_mmbp.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\epb_mmbp.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\epb_mmbp.o: ..\src\wechat\MmBp_Embedded_1.0.4\protobuf\epb_MmBp.h
+.\objects\epb_mmbp.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\epb_mmbp.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\epb_mmbp.o: ..\src\wechat\MmBp_Embedded_1.0.4\protobuf\epb.h
+.\objects\epb_mmbp.o: ..\src\include\mem_manager.h

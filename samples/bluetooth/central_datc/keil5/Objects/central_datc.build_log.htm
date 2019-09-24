@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: le Microsoft, Microsoft, LIC=KIVNN-YN1ZZ-RF1IZ-JI36U-KYDSX-M1VUE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  F:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMCM1.DLL V1.18.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TARMCM1.DLL V1.13.0.0
+ 
+<h2>Project:</h2>
+I:\BLE\CubieBLE1\CubieBLE1-v2\samples\bluetooth\central_datc\keil5\central_datc.uvprojx
+Project File Date:  05/05/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'F:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'flash'
+assembling startup.s...
+compiling entry.c...
+compiling system.c...
+compiling soc_patch.c...
+compiling soc_pm.c...
+compiling msg_manager.c...
+compiling main.c...
+..\src\main.c(136): warning:  #513-D: a value of type "struct bt_conn *" cannot be assigned to an entity of type "int"
+  	msg.value = conn;
+..\src\main.c(123): warning:  #177-D: variable "err"  was declared but never referenced
+  	int err;
+..\src\main.c(235): warning:  #513-D: a value of type "struct bt_conn *" cannot be assigned to an entity of type "int"
+  	msg.value = conn;
+..\src\main.c(220): warning:  #177-D: variable "err"  was declared but never referenced
+  	int err;
+..\src\main.c(275): warning:  #42-D: operand types are incompatible ("int" and "struct bt_conn *")
+  			if (msg.value == default_conn) {
+..\src\main.c(41): warning:  #177-D: variable "wp_ctrl_uuid"  was declared but never referenced
+  static const struct bt_uuid_128 wp_ctrl_uuid = BT_UUID_INIT_128(
+..\src\main.c: 6 warnings, 0 errors
+compiling board.c...
+compiling uart_console.c...
+compiling sys_clock_init.c...
+compiling uart_acts.c...
+compiling llc_hci.c...
+compiling llcc.c...
+compiling device.c...
+compiling kernel_config_init.c...
+compiling system_work_q.c...
+compiling bt_host_config_init.c...
+compiling bt_host_patch.c...
+compiling storage.c...
+linking...
+.\link.sct(47): warning: L6314W: No section matches pattern *.o(._k_mem_pool.static.*).
+.\link.sct(51): warning: L6314W: No section matches pattern *.o(.shell_).
+Program Size: Code=9468 RO-data=756 RW-data=8632 ZI-data=5904  
+Finished: 0 information, 2 warning and 0 error messages.
+".\Objects\central_datc.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM.CMSIS.4.2.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_flash
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
